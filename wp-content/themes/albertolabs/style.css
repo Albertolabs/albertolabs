@@ -8,7 +8,14 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+/* ROLLITO http://themes.3rdwavemedia.com/velocity/1.5.4/blog-category.html */
+
 /*Wordpress editor styles start*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #fff;
+}
 
 .entry-content img {
 	margin: 0 0 1.5em 0;
@@ -67,4 +74,34 @@ blockquote.right {
 	}
 
 /*Wordpress editor styles end*/
+div.post-content p{
+	line-height:1.5;
 
+}
+
+a.post_title{
+	color: #253340;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+a.post_title h2{
+	font-size: 24px;
+}
+
+.post{
+	margin: 20px 0 50px 0;
+	color: #444444;
+	font-size:16px;
+
+	background-clip: padding-box;
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+	box-shadow: 0 4px 1px rgba(0, 0, 0, 0.05);
+	padding: 20px;
+	position: relative;
+}
+a.read-more{
+	font-weight:bold;
+	color:#ec6952;
+}

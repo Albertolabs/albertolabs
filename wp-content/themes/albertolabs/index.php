@@ -10,11 +10,29 @@
 
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<a href="<?= get_permalink(); ?>" title="<?php the_title() ?>"><h2><?php the_title(); ?></h2></a>
-				<h5>Posted on <?php the_time('F jS, Y') ?></h5>
+				<a href="<?= esc_url(get_permalink()); ?>" title="<?php the_title() ?>" class="post_title"><h2><?php the_title(); ?></h2></a>
+				<p><small><?php the_date("d/m/Y") ?> &nbsp;&nbsp; by <?php the_author(); ?> &nbsp;&nbsp; <?php comments_number( '0 comments', '1 comment', '% comments' ); ?></small></p>
 
+				<hr />
 
-		 		<?php the_content("Read more"); ?>
+	 			<?php
+
+	 				function new_excerpt_more( $more ) 
+	 				{
+						return ' [...] <p><a href="#" class="read-more">Read more ></a></p>';
+					}
+
+		 			if ( is_category() || is_archive() || is_home() ) 
+		 			{
+						add_filter('excerpt_more', 'new_excerpt_more');
+						the_excerpt();
+					} 
+					else 
+					{
+						the_content();
+					} 
+
+				?>
 
 			</div>
 
