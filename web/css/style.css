@@ -13154,3 +13154,10 @@ select.language_list option{
 select.language_list option:hover{
 	cursor:pointer;
 }
+div.btn-down-scroll a{
+	font-size: 68px;
+	color: #444444;
+}
+div.btn-down-scroll a:hover{
+	color:#1ABC9C;
+}
