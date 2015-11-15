@@ -4545,7 +4545,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-overlay a {
 	left: auto;
 	right: 50%;
 	margin-left: 0;
-	margin-right: -44px;
+	margin-right: -24px;
 }
 
 .portfolio-overlay a.center-icon {
