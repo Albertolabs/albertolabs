@@ -1,5 +1,5 @@
 div.info-project{
-	padding:20px;
+	padding:0 0 20px 20px;
 }
 div.img-project{
 	max-height: 100%;
@@ -10,4 +10,35 @@ div.img-project{
 div.img-project img{
 	max-height: 100%;
 	max-width: 100%;
+}
+div.project-technologies i{
+	font-size: 5em;
+	margin: 30px 30px 10px 30px;
+}
+.debian, .debian:hover{
+	color:#DF0451;
+} 
+.nginx, .nginx:hover{
+	color: #35974F;
+}
+.mysql, .mysql:hover{
+	color: #00618A;
+}
+.wordpress, .wordpress:hover{
+	color: #464442;
+}
+.css3, .css3:hover{
+	color: #369CD6;
+}
+.html5, .html5:hover{
+	color: #F1662A;
+}
+.javascript, .javascript:hover{
+	color: #D6BA32;
+}
+.php, .php:hover{
+	color: #7678B0;
+}
+div.project-description p{
+	font-size:16px;
 }
