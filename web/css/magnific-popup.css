@@ -148,6 +148,7 @@ button::-moz-focus-inner {
 .mfp-close-btn-in .mfp-close {
 	color: #333; }
 
+
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
 	color: #FFF;
 	right: -6px;
@@ -223,7 +224,7 @@ button::-moz-focus-inner {
 	.mfp-iframe-holder .mfp-content {
 		line-height: 0;
 		width: 100%;
-		max-width: 900px; }
+		max-width: 75%; }
 	.mfp-iframe-holder .mfp-close {
 		top: -40px; }
 
