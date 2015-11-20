@@ -1,5 +1,5 @@
 div.info-project{
-	padding:0 0 20px 20px;
+	padding:0 20px 20px 20px !important;
 }
 div.img-project{
 	max-height: 100%;
@@ -11,9 +11,18 @@ div.img-project img{
 	max-height: 100%;
 	max-width: 100%;
 }
-div.project-technologies i{
-	font-size: 5em;
-	margin: 30px 30px 10px 30px;
+div.project-description{
+	margin: 30px auto auto auto;
+}
+div.project-technologies{
+	margin: 40px auto auto auto;
+}
+div.project-technologies div.tagcloud{
+	padding-top: 10px;
+	font-weight:bold;
+}
+div.project-technologies div.tagcloud a:hover{
+	text-decoration: none;
 }
 .debian, .debian:hover{
 	color:#DF0451;
@@ -41,4 +50,30 @@ div.project-technologies i{
 }
 div.project-description p{
 	font-size:16px;
+}
+
+
+.tagcloud { margin-bottom: -2px; }
+
+.tagcloud a {
+	display: block;
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 3px 6px;
+	border: 1px solid #E5E5E5;
+	font-size: 13px !important;
+	color: #666;
+	border-radius: 2px;
+}
+
+body:not(.device-touch) .tagcloud a {
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.tagcloud a:hover {
+	border-color: #1ABC9C !important;
+	color: #1ABC9C !important;
 }
