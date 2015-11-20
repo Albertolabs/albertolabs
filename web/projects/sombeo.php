@@ -16,7 +16,6 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 		<link rel="stylesheet" href="<?= $host ?>/css/projects.css" />
-		<link rel="stylesheet" href="<?= $host ?>include/font-mfizz/font-mfizz.css">
 	</head>
 
 	<body>	
@@ -36,26 +35,23 @@
 				<h1 class="page-header">Sombeo <small>Website</small></h1>
 
 				<div class="project-description">
-					<p>Sombeo is a website based on Wordpress where we post funny things every day. This website has been adapted to our needs: we have modified some Wordpress open source plugins, the main template, etc.</p>
-					<p>Automation process for crawling the content from other websites has been developed and lets us to publish quickly the best and funniest content from the Internet in our website.</p>
+
+					<h3>About</h3>
+
+					<p>Sombeo is a website based on Wordpress where we post funny things every day. This website has been adapted to our needs: we have modified some Wordpress functionallities and plugins, the main template, etc.</p>
+					<p>We have developed various automation process which are executed through crontabs:</p>
+
+					<p>First of them, it crawls the content from many websites. This lets us to publish quickly the best and funniest content from the Internet in our website.</p>
+					<p>Another one, it's used to auto-posting pre-defined content in our Facebook page using Facebook SDK. It isn't only about sharing posts, this process uploads the images and videos content to the Facebook page.</p>
+
 				</div>
 
-				<hr />
 
 				<div class="project-technologies">
 
 					<h3>Development</h3>
 
-					<a href="#" class="wordpress" data-toggle="tooltip" data-placement="bottom" title="Wordpress"><i class="icon-wordpress"></i></a>
-					<a href="#" class="html5" data-toggle="tooltip" data-placement="bottom" title="HTML 5"><i class="icon-html"></i></a>
-					<a href="#" class="css3" data-toggle="tooltip" data-placement="bottom" title="CSS 3"><i class="icon-css"></i></a>
-					<a href="#" class="javascript" data-toggle="tooltip" data-placement="bottom" title="Javascript - jQuery"><i class="icon-javascript"></i></a>
-					<a href="#" class="php" data-toggle="tooltip" data-placement="bottom" title="PHP"><i class="icon-php"></i></a>
-					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Shell - Cronjobs"><i class="icon-shell"></i></a>
-					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Responsive design"><i class="icon-mobile-device"></i></a>			
-					<a href="#" class="debian" data-toggle="tooltip" data-placement="bottom" title="Debian"><i class="icon-debian"></i></a>
-					<a href="#" class="nginx" data-toggle="tooltip" data-placement="bottom" title="Nginx"><i class="icon-nginx"></i></a>
-					<a href="#" class="mysql" data-toggle="tooltip" data-placement="bottom" title="MySQL"><i class="icon-mysql"></i></a>
+					
 
 				</div>
 
