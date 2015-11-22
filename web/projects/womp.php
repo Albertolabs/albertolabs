@@ -7,6 +7,11 @@
 		$host = "http://localhost/albertolabs/web/";
 	}
 
+	// config vars
+	$nombre_proyecto 	= "Womp";
+	$url_img_prev 		= $host . "images/projects/womp-full.jpg";
+	$url_proyecto 		= $url_img_prev;
+
 ?>
 
 <html>
@@ -25,24 +30,23 @@
 
 			<div class="col-md-5 img-project">
 				
-				<a href="http://www.sombeo.com/" target="_blank" title="Visitar Sombeo.com">
-					<img src="<?= $host ?>/images/projects/sombeo-full.jpeg" title="Sombeo" alt="Sombeo" />
+				<a href="<?= $url_proyecto ?>" target="_blank" title="Visitar <?= $nombre_proyecto ?>">
+					<img src="<?= $url_img_prev ?>" title="<?= $nombre_proyecto ?>" class="border" alt="<?= $nombre_proyecto ?>" />
 				</a>
 
 			</div>
 
 			<div class="col-md-7 info-project">
 				
-				<h1 class="page-header">Sombeo <small>Website</small></h1>
+				<h1 class="page-header"><?= $nombre_proyecto ?> <small>Website</small></h1>
 
 				<div class="project-description">
 
 					<h3>About</h3>
 
-					<p>Sombeo is a website based on Wordpress where we post funny things every day. This website has been adapted to our needs: we have modified some Wordpress functionalities and plugins, the main template, etc.</p>
-					<p>We have developed various automation process whose are executed through crontab:</p>
-					<p>First of them, gets content from various websites. After this, content must be approved by administrators for being published in the main page. This lets us to publish quickly the best and funniest content from the Internet in our website.</p>
-					<p>Another one, it is a process used to auto-posting pre-defined content in our Facebook page using Facebook SDK. It isn't only about sharing posts, this process uploads the images and videos content to the Facebook page.</p>
+					<p>Womp is a young web development company which offers all kind of custom web solutions for their customers.</p>
+					<p>We developed the last website version for Womp, creating a custom CMS and a responsive design with Bootstrap 3.</p>
+					<p>Actually, Womp isn't using this website design, but you can see a theme preview in the left image or clicking on the '<i>View template</i>' button. </p>
 
 				</div>
 
@@ -56,12 +60,12 @@
 							<a href="#">CSS 3</a>
 							<a href="#">JAVASCRIPT</a>
 							<a href="#">JQUERY</a>
+							<a href="#">BOOTSTRAP 3</a>
 							<a href="#">RESPONSIVE DESIGN</a>
 						</p>
 						<div class="clearfix"></div>
 
 						<p>
-							<a href="#">WORDPRESS</a>
 							<a href="#">PHP</a>
 							<a href="#">MYSQL</a>
 						</p>
@@ -79,7 +83,7 @@
 				<hr />
 
 				<div class="text-center">
-					<a class="button button-desc" title="Visit website" href="http://www.sombeo.com/" target="_blank"><div>Visit website<span>http://www.sombeo.com/</span></div></a>
+					<a class="button button-desc" title="Visit template" href="<?= $url_proyecto ?>" target="_blank"><div>View template</div></a>
 				</div>
 
 			</div>
