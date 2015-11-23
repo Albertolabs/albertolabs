@@ -8,9 +8,9 @@
 	}
 
 	// config vars
-	$nombre_proyecto 	= "Blog Reaccionestudio";
-	$url_img_prev 		= $host . "images/projects/blog-reaccionestudio-full.jpg";
-	$url_proyecto 		= "http://blog.reaccionestudio.com/";
+	$nombre_proyecto 	= "Reaccionestudio";
+	$url_img_prev 		= $host . "images/projects/reaccionestudio-full.jpg";
+	$url_proyecto 		= "http://www.reaccionestudio.com/";
 
 ?>
 
@@ -49,9 +49,7 @@
 				<div class="project-description">
 
 					<h3>About</h3>
-
 					<p>Reaccionestudio is a web development and graphic design studio founded by young people from Spain who love web development, graphic design, photography, video production, etc.</p>
-					<p>Reaccionestudio blog has been developed with Wordpress. Here they post tutorials, tips, snippets, news and new projects.</p>
 
 				</div>
 
@@ -69,7 +67,6 @@
 						<div class="clearfix"></div>
 
 						<p>
-							<a href="#">WORDPRESS</a>
 							<a href="#">PHP</a>
 							<a href="#">MYSQL</a>
 						</p>
