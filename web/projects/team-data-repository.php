@@ -8,9 +8,9 @@
 	}
 
 	// config vars
-	$nombre_proyecto 	= "Receptormixto";
-	$url_img_prev 		= $host . "images/projects/receptormixto-full.jpeg";
-	$url_proyecto 		= "http://www.receptormixto99705.com/";
+	$nombre_proyecto 	= "Team Data Repository";
+	$url_img_prev 		= $host . "images/projects/team-data-repository-full.jpg";
+	$url_proyecto 		= "http://www.teamdatarepository.com/demostration";
 
 ?>
 
@@ -50,9 +50,9 @@
 
 					<h3>About</h3>
 
-					<p>Receptormixto is a web application used by a lottery administration where they can upload the results from different raffles.</p>
-					<p>Lottery administration has a touch monitor where is displayed the web application for query the results by their customers.</p>
-					<p>Results are classified by raffles and dates, creating a history with all the data.</p>
+					<p>Team Data Repository is an open source web application which stores and centralizes all necessary information for your team obtaining greater productivity for your employees and your company.</p>
+					<p>All the information you need on your screen. Don't waste more time researching information between tonnes of paper.</p>
+					<p>Team Data Repository prevents this process and helps you keeping all your information ordered.</p>
 
 				</div>
 
@@ -66,12 +66,13 @@
 							<a href="#">CSS 3</a>
 							<a href="#">JAVASCRIPT</a>
 							<a href="#">JQUERY</a>
-							<a href="#">BOOTSTRAP 3</a>
+							<a href="#">BOOTSTRAP 2</a>
 							<a href="#">RESPONSIVE DESIGN</a>
 						</p>
 						<div class="clearfix"></div>
 
 						<p>
+							<a href="#">CODEIGNITER</a>
 							<a href="#">PHP</a>
 							<a href="#">MYSQL</a>
 						</p>

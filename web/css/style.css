@@ -13161,3 +13161,20 @@ div.btn-down-scroll a{
 div.btn-down-scroll a:hover{
 	color:#1ABC9C;
 }
+
+.logo{
+	padding-top:30px;
+}
+.logo-font-size{
+	font-weight:bold;
+	font-size:46px;
+}
+.logo .icon-beaker{
+	font-size:40px;
+}
+.standard-logo{
+	padding-top:30px;
+}
+header.sticky-header .standard-logo{
+	padding-top:9px;
+}

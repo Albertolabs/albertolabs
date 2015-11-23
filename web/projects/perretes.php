@@ -30,9 +30,15 @@
 
 			<div class="col-md-5 img-project">
 				
-				<a href="<?= $url_proyecto ?>" target="_blank" title="Visitar <?= $nombre_proyecto ?>">
-					<img src="<?= $url_img_prev ?>" title="<?= $nombre_proyecto ?>" alt="<?= $nombre_proyecto ?>" />
-				</a>
+				<table style="height:100%">
+					<tr>
+						<td style="vertical-align:middle;">
+							<a href="<?= $url_proyecto ?>" target="_blank" title="Visitar <?= $nombre_proyecto ?>">
+								<img src="<?= $url_img_prev ?>" title="<?= $nombre_proyecto ?>" alt="<?= $nombre_proyecto ?>" />
+							</a>
+						</td>
+					</tr>
+				</table>
 
 			</div>
 

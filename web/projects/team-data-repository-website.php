@@ -8,9 +8,9 @@
 	}
 
 	// config vars
-	$nombre_proyecto 	= "Receptormixto";
-	$url_img_prev 		= $host . "images/projects/receptormixto-full.jpeg";
-	$url_proyecto 		= "http://www.receptormixto99705.com/";
+	$nombre_proyecto 	= "Team Data Repository";
+	$url_img_prev 		= $host . "images/projects/team-data-repository-website-full.jpg";
+	$url_proyecto 		= "http://www.teamdatarepository.com/";
 
 ?>
 
@@ -44,15 +44,14 @@
 
 			<div class="col-md-7 info-project">
 				
-				<h1 class="page-header"><?= $nombre_proyecto ?> <small>Web App</small></h1>
+				<h1 class="page-header"><?= $nombre_proyecto ?> <small>Website</small></h1>
 
 				<div class="project-description">
 
 					<h3>About</h3>
 
-					<p>Receptormixto is a web application used by a lottery administration where they can upload the results from different raffles.</p>
-					<p>Lottery administration has a touch monitor where is displayed the web application for query the results by their customers.</p>
-					<p>Results are classified by raffles and dates, creating a history with all the data.</p>
+					<p>Team Data Repository is an open source web application which stores and centralizes all necessary information for your team obtaining greater productivity for your employees and your company.</p>
+					<p>We have development a beautiful website for Team Data Repository.</p>
 
 				</div>
 
@@ -66,12 +65,12 @@
 							<a href="#">CSS 3</a>
 							<a href="#">JAVASCRIPT</a>
 							<a href="#">JQUERY</a>
-							<a href="#">BOOTSTRAP 3</a>
 							<a href="#">RESPONSIVE DESIGN</a>
 						</p>
 						<div class="clearfix"></div>
 
 						<p>
+							<a href="#">CODEIGNITER</a>
 							<a href="#">PHP</a>
 							<a href="#">MYSQL</a>
 						</p>
@@ -89,7 +88,7 @@
 				<hr />
 
 				<div class="text-center">
-					<a class="button button-desc" title="Visit web app" href="<?= $url_proyecto ?>" target="_blank"><div class="text-center">View web app<span><?= $url_proyecto ?></span></div></a>
+					<a class="button button-desc" title="Visit website" href="<?= $url_proyecto ?>" target="_blank"><div class="text-center">View website<span><?= $url_proyecto ?></span></div></a>
 				</div>
 
 			</div>
