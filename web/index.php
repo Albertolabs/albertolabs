@@ -62,7 +62,7 @@
 					============================================= -->
 					<div id="logo">
 
-						<a href="index.html" class="standard-logo"><span class="logo-font-size">ALBERTO<span class="color_green">L</span></span><span class="color_green"><i class="color_green_dark icon-beaker"></i><span class="logo-font-size">BS</span></span></a>
+						<a title="Home" href="index.php" class="standard-logo"><span class="logo-font-size">ALBERTO<span class="color_green">L</span></span><span class="color_green"><i class="color_green_dark icon-beaker"></i><span class="logo-font-size">BS</span></span></a>
 						
 					</div><!-- #logo end -->
 
@@ -486,9 +486,9 @@
 				<div class="container clearfix">
 
 					<div class="col_half">
-						<img src="images/footer-logo.png" alt="Footer Logo" class="footer-logo">
-
-						Copyright &copy; 2015 All Rights Reserved by Canvas Inc.
+						Made with &nbsp;<i class="icon-heart3"></i>&nbsp; from Madrid
+						<br />
+						&copy; &nbsp;Albertolabs.com &nbsp;-&nbsp; <?= date("Y") ?>
 					</div>
 
 					<div class="col_half col_last tright">
@@ -502,16 +502,7 @@
 						</div>
 						<div class="clearfix"></div>
 
-						<div class="fright clearfix">
-
-							<p>
-								<select class="form-control language_list">
-									<option value="en">English</option>
-									<option value="es">Español</option>
-								</select>
-							</p>
-
-						</div>
+						<div class="fright clearfix"></div>
 					</div>
 
 				</div>
