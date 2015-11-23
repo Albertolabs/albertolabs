@@ -78,6 +78,7 @@
 						<p>
 							<a href="#">DEBIAN</a>
 							<a href="#">NGINX</a>
+							<a href="#">GIT</a>
 						</p>
 					</div>
 

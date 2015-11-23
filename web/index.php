@@ -494,11 +494,28 @@
 					<div class="col_half col_last tright">
 
 						<div class="copyrights-menu copyright-links fright clearfix">
-							<a href="#" data-href="#section-home">Home</a>/
-							<a href="#" data-href="#section-services">Services</a>/
-							<a href="#" data-href="#section-projects">Projects</a>/
-							<a href="#" data-href="#section-contact">Contact</a>/
-							<a href="#">Blog</a>
+
+							<i class="icon-home2"></i>
+							<a href="#" data-href="#section-home">Home</a>|
+							&nbsp;&nbsp;
+
+							<i class="icon-desktop"></i>
+							<a href="#" data-href="#section-services">Services</a>|
+							&nbsp;&nbsp;
+
+							<i class="icon-beaker"></i>
+							<a href="#" data-href="#section-projects">Projects</a>|
+							&nbsp;&nbsp;
+
+							<i class="icon-bag"></i>
+							<a href="#" data-href="#section-contact">Contact</a>|
+							&nbsp;&nbsp;
+
+							<i class="icon-pencil2"></i>
+							<a href="#">Blog</a>|
+
+							<a href="https://github.com/viher3/" target="_blank" title="Github"><i class="icon-github-circled"></i>&nbsp;&nbsp; Github</a>
+
 						</div>
 						<div class="clearfix"></div>
 
