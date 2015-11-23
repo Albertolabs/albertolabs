@@ -9,7 +9,7 @@ div.img-project{
 	max-width: 100%;
 	border-right: 1px solid #DDD !important;
 	padding:0;
-	background-color:#F3F3F3;
+	background-color:#000;
 }
 img.border{
 	border-left:1px solid #DDD;
@@ -59,10 +59,7 @@ div.project-technologies div.tagcloud a:hover{
 div.project-description p{
 	font-size:16px;
 }
-
-
 .tagcloud { margin-bottom: -2px; }
-
 .tagcloud a {
 	display: block;
 	float: left;
@@ -87,4 +84,13 @@ body:not(.device-touch) .tagcloud a {
 }
 .text-center{
 	text-align:center;
+}
+div.img-project table{
+	height:100%;
+}
+div.img-project table td{
+	vertical-align:middle;
+}
+div.img-project table td img{
+	width: 100%;
 }

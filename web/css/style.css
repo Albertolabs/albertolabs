@@ -13173,8 +13173,11 @@ div.btn-down-scroll a:hover{
 	font-size:40px;
 }
 .standard-logo{
-	padding-top:30px;
+	padding-top:35px;
 }
-header.sticky-header .standard-logo{
-	padding-top:9px;
+.color_green{
+	color:#1ABCA4;
+}
+.color_green_dark{
+	color:#0E6957;
 }

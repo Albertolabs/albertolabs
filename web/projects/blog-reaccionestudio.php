@@ -8,9 +8,9 @@
 	}
 
 	// config vars
-	$nombre_proyecto 	= "Womp";
-	$url_img_prev 		= $host . "images/projects/womp-full.jpg";
-	$url_proyecto 		= $url_img_prev;
+	$nombre_proyecto 	= "Blog Reaccionestudio";
+	$url_img_prev 		= $host . "images/projects/blog-reaccionestudio-full.jpg";
+	$url_proyecto 		= "http://blog.reaccionestudio.com/";
 
 ?>
 
@@ -30,9 +30,15 @@
 
 			<div class="col-md-5 img-project">
 				
-				<a href="<?= $url_proyecto ?>" target="_blank" title="Visitar <?= $nombre_proyecto ?>">
-					<img src="<?= $url_img_prev ?>" title="<?= $nombre_proyecto ?>" alt="<?= $nombre_proyecto ?>" />
-				</a>
+				<table style="height:100%">
+					<tr>
+						<td style="vertical-align:middle;">
+							<a href="<?= $url_proyecto ?>" target="_blank" title="Visitar <?= $nombre_proyecto ?>">
+								<img src="<?= $url_img_prev ?>" title="<?= $nombre_proyecto ?>" alt="<?= $nombre_proyecto ?>" />
+							</a>
+						</td>
+					</tr>
+				</table>
 
 			</div>
 
@@ -44,9 +50,7 @@
 
 					<h3>About</h3>
 
-					<p>Womp is a young web development company which offers all kind of custom web solutions for their customers.</p>
-					<p>We developed the last website version for Womp, creating a custom CMS and a responsive design with Bootstrap 3.</p>
-					<p>Actually, Womp isn't using this website design, but you can see a theme preview in the left image or clicking on the '<i>View template</i>' button. </p>
+					<p>Blog Reaccionestudio is a web development blog created with Wordpress for Reaccionestudio.</p>
 
 				</div>
 
@@ -60,12 +64,11 @@
 							<a href="#">CSS 3</a>
 							<a href="#">JAVASCRIPT</a>
 							<a href="#">JQUERY</a>
-							<a href="#">BOOTSTRAP 3</a>
-							<a href="#">RESPONSIVE DESIGN</a>
 						</p>
 						<div class="clearfix"></div>
 
 						<p>
+							<a href="#">WORDPRESS</a>
 							<a href="#">PHP</a>
 							<a href="#">MYSQL</a>
 						</p>
@@ -83,7 +86,7 @@
 				<hr />
 
 				<div class="text-center">
-					<a class="button button-desc" title="Visit template" href="<?= $url_proyecto ?>" target="_blank"><div>View template</div></a>
+					<a class="button button-desc" title="Visit website" href="<?= $url_proyecto ?>" target="_blank"><div class="text-center">View website<span><?= $url_proyecto ?></span></div></a>
 				</div>
 
 			</div>
