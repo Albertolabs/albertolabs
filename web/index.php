@@ -24,7 +24,6 @@
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
@@ -33,7 +32,7 @@
 
 	<!-- External JavaScripts
 	============================================= -->
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 
 	<!-- Document Title
@@ -514,12 +513,14 @@
 							<i class="icon-pencil2"></i>
 							<a href="#">Blog</a>|
 
-							<a href="https://github.com/viher3/" target="_blank" title="Github"><i class="icon-github-circled"></i>&nbsp;&nbsp; Github</a>
-
 						</div>
 						<div class="clearfix"></div>
 
-						<div class="fright clearfix"></div>
+						<div class="fright clearfix">
+							
+							<a href="https://github.com/viher3/" target="_blank" class="github_link" title="Github"><i class="icon-github-circled"></i>&nbsp;&nbsp; Github</a>
+
+						</div>
 					</div>
 
 				</div>

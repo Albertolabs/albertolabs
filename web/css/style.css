@@ -3467,6 +3467,7 @@ body:not(.device-touch) #portfolio {
 .portfolio-item .portfolio-image {
 	position: relative;
 	overflow: hidden;
+	border:1px solid #E5E5E5;
 }
 
 .portfolio-item .portfolio-image,
@@ -13180,4 +13181,7 @@ div.btn-down-scroll a:hover{
 }
 .color_green_dark{
 	color:#0E6957;
+}
+.github_link{
+	color:rgba(255, 255, 255, 0.25);
 }
