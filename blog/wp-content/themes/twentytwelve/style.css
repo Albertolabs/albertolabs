@@ -1499,10 +1499,6 @@ img#wpstats {
 		float: right;
 		width: 26.041666667%;
 	}
-	.site-header h1,
-	.site-header h2 {
-		text-align: left;
-	}
 	.site-header h1 {
 		font-size: 26px;
 		font-size: 1.857142857rem;
