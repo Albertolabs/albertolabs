@@ -16,16 +16,21 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define('DB_NAME', 'albertolabs_blog');
 
-/** Tu nombre de usuario de MySQL */
-define('DB_USER', 'dev_all');
-
-/** Tu contraseña de MySQL */
-define('DB_PASSWORD', '181302');
-
-/** Host de MySQL (es muy probable que no necesites cambiarlo) */
-define('DB_HOST', '178.33.202.66');
+if($_SERVER['SERVER_NAME'] == "localhost")
+{
+	define('DB_NAME', 'albertolabs_blog');
+	define('DB_USER', 'root');
+	define('DB_PASSWORD', 'root');
+	define('DB_HOST', '127.0.0.1');
+}
+else
+{
+	define('DB_NAME', 'albertolabs_blog');
+	define('DB_USER', 'dev_all');
+	define('DB_PASSWORD', '181302');
+	define('DB_HOST', '178.33.202.66');
+}
 
 /** Codificación de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8mb4');
