@@ -62,7 +62,7 @@
 								<a href="#" title="Contact" data-href="#section-contact"><div><i class="icon-bag"></i> Contact</div></a>
 							</li>
 							<li>
-								<a href="http://www.albertolabs.com/blog/" title="Blog"><div><i class="icon-pencil2"></i> Blog</div></a>
+								<a href="http://blog.albertolabs.com/" title="Blog"><div><i class="icon-pencil2"></i> Blog</div></a>
 							</li>
 						</ul>
 
@@ -472,7 +472,7 @@
 							&nbsp;&nbsp;
 
 							<i class="icon-pencil2"></i>
-							<a href="http://www.albertolabs.com/blog/" title="Blog">Blog</a>
+							<a href="http://blog.albertolabs.com/" title="Blog">Blog</a>
 
 						</div>
 						<div class="clearfix"></div>
