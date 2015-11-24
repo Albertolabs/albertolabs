@@ -7,14 +7,21 @@
 	<meta name="author" content="Albertolabs.com" />
 
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous" />
+
+	<?php if($_SERVER['SERVER_NAME'] == "localhost"){ ?>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<?php }else{ ?>
+	<link rel="stylesheet" href="css/index.min.css" type="text/css" />
+	<?php } ?>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
@@ -43,19 +50,19 @@
 
 						<ul class="one-page-menu">
 							<li class="current">
-								<a href="#" data-href="#section-home"><div><i class="icon-home2"></i> Home</div></a>
+								<a href="#" title="Home" data-href="#section-home"><div><i class="icon-home2"></i> Home</div></a>
 							</li>
 							<li>
-								<a href="#" data-href="#section-services"><div><i class="icon-desktop"></i> Services</div></a>
+								<a href="#" title="Services" data-href="#section-services"><div><i class="icon-desktop"></i> Services</div></a>
 							</li>
 							<li>
-								<a href="#" data-href="#section-projects"><div><i class="icon-beaker"></i> Projects</div></a>
+								<a href="#" title="Projects" data-href="#section-projects"><div><i class="icon-beaker"></i> Projects</div></a>
 							</li>
 							<li>
-								<a href="#" data-href="#section-contact"><div><i class="icon-bag"></i> Contact</div></a>
+								<a href="#" title="Contact" data-href="#section-contact"><div><i class="icon-bag"></i> Contact</div></a>
 							</li>
 							<li>
-								<a href="#"><div><i class="icon-pencil2"></i> Blog</div></a>
+								<a href="http://www.albertolabs.com/blog/" title="Blog"><div><i class="icon-pencil2"></i> Blog</div></a>
 							</li>
 						</ul>
 
@@ -449,23 +456,23 @@
 						<div class="copyrights-menu copyright-links fright clearfix">
 
 							<i class="icon-home2"></i>
-							<a href="#" data-href="#section-home">Home</a>|
+							<a href="#" data-href="#section-home" title="Home">Home</a>|
 							&nbsp;&nbsp;
 
 							<i class="icon-desktop"></i>
-							<a href="#" data-href="#section-services">Services</a>|
+							<a href="#" data-href="#section-services" title="Services">Services</a>|
 							&nbsp;&nbsp;
 
 							<i class="icon-beaker"></i>
-							<a href="#" data-href="#section-projects">Projects</a>|
+							<a href="#" data-href="#section-projects" title="Projects">Projects</a>|
 							&nbsp;&nbsp;
 
 							<i class="icon-bag"></i>
-							<a href="#" data-href="#section-contact">Contact</a>|
+							<a href="#" data-href="#section-contact" title="Contact">Contact</a>|
 							&nbsp;&nbsp;
 
 							<i class="icon-pencil2"></i>
-							<a href="#">Blog</a>
+							<a href="http://www.albertolabs.com/blog/" title="Blog">Blog</a>
 
 						</div>
 						<div class="clearfix"></div>
@@ -496,10 +503,11 @@
 	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/contacto.js"></script>
-	<script type="text/javascript">var contact = new Contact();contact.events();</script>
 	<?php }else{ ?>
-
+	<script type="text/javascript" src="js/index.min.js"></script>
 	<?php } ?>
+
+	<script type="text/javascript">var contact = new Contact();contact.events();</script>
 
 </body>
 </html>
