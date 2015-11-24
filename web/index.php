@@ -35,18 +35,28 @@
 
 					<div id="logo">
 
-						<a title="Home" href="index.php" class="standard-logo"><span class="logo-font-size">ALBERTO<span class="color_green">L</span></span><span class="color_green"><i class="color_green_dark icon-beaker"></i><span class="logo-font-size">BS</span></span></a>
+						<a title="Home" href="#" class="standard-logo"><span class="logo-font-size">ALBERTO<span class="color_green">L</span></span><span class="color_green"><i class="color_green_dark icon-beaker"></i><span class="logo-font-size">BS</span></span></a>
 						
 					</div><!-- #logo end -->
 
 					<nav id="primary-menu" class="style-5">
 
 						<ul class="one-page-menu">
-							<li class="current"><a href="#" data-href="#section-home"><div><i class="icon-home2"></i> Home</div></a></li>
-							<li><a href="#" data-href="#section-services"><div><i class="icon-desktop"></i> Services</div></a></li>
-							<li><a href="#" data-href="#section-projects"><div><i class="icon-beaker"></i> Projects</div></a></li>
-							<li><a href="#" data-href="#section-contact"><div><i class="icon-bag"></i> Contact</div></a></li>
-							<li><a href="#"><div><i class="icon-pencil2"></i> Blog</div></a></li>
+							<li class="current">
+								<a href="#" data-href="#section-home"><div><i class="icon-home2"></i> Home</div></a>
+							</li>
+							<li>
+								<a href="#" data-href="#section-services"><div><i class="icon-desktop"></i> Services</div></a>
+							</li>
+							<li>
+								<a href="#" data-href="#section-projects"><div><i class="icon-beaker"></i> Projects</div></a>
+							</li>
+							<li>
+								<a href="#" data-href="#section-contact"><div><i class="icon-bag"></i> Contact</div></a>
+							</li>
+							<li>
+								<a href="#"><div><i class="icon-pencil2"></i> Blog</div></a>
+							</li>
 						</ul>
 
 					</nav><!-- #primary-menu end -->
@@ -455,7 +465,7 @@
 							&nbsp;&nbsp;
 
 							<i class="icon-pencil2"></i>
-							<a href="#">Blog</a>|
+							<a href="#">Blog</a>
 
 						</div>
 						<div class="clearfix"></div>
