@@ -52,7 +52,7 @@ if( !function_exists( 'wpsabox_author_box' ) ) {
 
             // author box gravatar
             $saboxmeta .= '<div class="saboxplugin-gravatar">';
-            $saboxmeta .= get_avatar( get_the_author_meta( 'user_email', $author_id ), '100' );
+            $saboxmeta .= '<img alt="Alberto" src="http://blog.albertolabs.com/wp-content/uploads/2015/11/yo.jpg" srcset="http://blog.albertolabs.com/wp-content/uploads/2015/11/yo.jpg" class="avatar avatar-100 photo" height="100" width="100">';
             $saboxmeta .= '</div>';
 
             // author box name
