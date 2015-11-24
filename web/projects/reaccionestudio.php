@@ -8,7 +8,7 @@
 	}
 
 	// config vars
-	$nombre_proyecto 	= "Reaccionestudio";
+	$nombre_proyecto 	= "Reaccion Estudio";
 	$url_img_prev 		= $host . "images/projects/reaccionestudio-full.jpg";
 	$url_proyecto 		= "http://www.reaccionestudio.com/";
 

@@ -3469,6 +3469,9 @@ body:not(.device-touch) #portfolio {
 	overflow: hidden;
 	border:1px solid #E5E5E5;
 }
+.portfolio-item .portfolio-image:hover {
+	cursor:pointer;
+}
 
 .portfolio-item .portfolio-image,
 .portfolio-item .portfolio-image a,
@@ -13184,4 +13187,10 @@ div.btn-down-scroll a:hover{
 }
 .github_link{
 	color:rgba(255, 255, 255, 0.25);
+}
+div#form-contact-errors ul{
+	padding:0 20px 0 20px;
+}
+.alert-success, .alert-danger{
+	font-size:16px;
 }

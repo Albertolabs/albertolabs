@@ -1,22 +1,11 @@
-<!--
-	sticky_footer -> OK
-	menu_style_5 -> OK
-	landing_1 -> OK
-	services
-	blog_simple > default layout
-	blog > small thumbs > right side bar
-	portafolio > jquery filter -> OK
--->
-
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
 
+	<title>Albertolabs - Freelance Full-Stack developer</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Albertolabs.com" />
 
-	<!-- Stylesheets
-	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -30,25 +19,12 @@
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 
-	<!-- External JavaScripts
-	============================================= -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-
-	<!-- Document Title
-	============================================= -->
-	<title>Albertolabs - Freelance Full-Stack developer</title>
-
 </head>
 
 <body class="stretched">
 
-	<!-- Document Wrapper
-	============================================= -->
 	<div id="wrapper" class="clearfix">
 
-		<!-- Header
-		============================================= -->
 		<header id="header">
 
 			<div id="header-wrap">
@@ -57,24 +33,20 @@
 
 					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-					<!-- Logo
-					============================================= -->
 					<div id="logo">
 
 						<a title="Home" href="index.php" class="standard-logo"><span class="logo-font-size">ALBERTO<span class="color_green">L</span></span><span class="color_green"><i class="color_green_dark icon-beaker"></i><span class="logo-font-size">BS</span></span></a>
 						
 					</div><!-- #logo end -->
 
-					<!-- Primary Navigation
-					============================================= -->
 					<nav id="primary-menu" class="style-5">
 
 						<ul class="one-page-menu">
-							<li class="current"><a href="#" data-href="#section-home"><div><i class="icon-home2"></i>Home</div></a></li>
-							<li><a href="#" data-href="#section-services"><div><i class="icon-desktop"></i>Services</div></a></li>
-							<li><a href="#" data-href="#section-projects"><div><i class="icon-beaker"></i>Projects</div></a></li>
-							<li><a href="#" data-href="#section-contact"><div><i class="icon-bag"></i>Contact</div></a></li>
-							<li><a href="#"><div><i class="icon-pencil2"></i>Blog</div></a></li>
+							<li class="current"><a href="#" data-href="#section-home"><div><i class="icon-home2"></i> Home</div></a></li>
+							<li><a href="#" data-href="#section-services"><div><i class="icon-desktop"></i> Services</div></a></li>
+							<li><a href="#" data-href="#section-projects"><div><i class="icon-beaker"></i> Projects</div></a></li>
+							<li><a href="#" data-href="#section-contact"><div><i class="icon-bag"></i> Contact</div></a></li>
+							<li><a href="#"><div><i class="icon-pencil2"></i> Blog</div></a></li>
 						</ul>
 
 					</nav><!-- #primary-menu end -->
@@ -86,8 +58,6 @@
 		</header><!-- #header end -->
 		<div class="clearfix"></div>
 
-		<!-- Content
-		============================================= -->
 		<section id="content">
 
 			<div class="content-wrap">
@@ -253,8 +223,7 @@
 								
 								<div class="clear"></div>
 
-								<!-- Portfolio Items
-								============================================= -->
+								<!-- Portfolio Items -->
 								<div id="portfolio" class="clearfix">
 
 									<article class="portfolio-item pf-media pf-icons">
@@ -299,7 +268,7 @@
 										</div>
 										<div class="portfolio-desc">
 											<h3>
-												<a href="./projects/womp.php">Womp</a>
+												<a href="./projects/womp.php" title="Womp" title="Ver más sobre Womp" class="right-icon" data-lightbox="iframe">Womp</a>
 											</h3>
 											<span>Website</span>
 										</div>
@@ -314,7 +283,7 @@
 										</div>
 										<div class="portfolio-desc">
 											<h3>
-												<a href="./projects/receptormixto.php">Receptormixto</a>
+												<a href="./projects/receptormixto.php" title="Receptormixto" class="right-icon" data-lightbox="iframe">Receptormixto</a>
 											</h3>
 											<span>Software, Web application</span>
 										</div>
@@ -329,11 +298,9 @@
 										</div>
 										<div class="portfolio-desc">
 											<h3>
-												<a href="./projects/team-data-repository.php">Team data repository</a>
+												<a href="./projects/team-data-repository.php" title="Team data repository Software" class="right-icon" data-lightbox="iframe">Team data repository</a>
 											</h3>
-											<span>
-												<a href="#">Software</a>,
-												<a href="#">Web application</a>
+											<span>Software, Web application</a>
 											</span>
 										</div>
 									</article>
@@ -347,7 +314,7 @@
 										</div>
 										<div class="portfolio-desc">
 											<h3>
-												<a href="./projects/team-data-repository-website.php" title="Team data repository">Team data repository</a>
+												<a href="./projects/team-data-repository-website.php" title="Team data repository" class="right-icon" data-lightbox="iframe">Team data repository</a>
 											</h3>
 											<span>Website</span>
 										</div>
@@ -362,7 +329,7 @@
 										</div>
 										<div class="portfolio-desc">
 											<h3>
-												<a href="./projects/blog-reaccionestudio.php" title="Blog Reaccionestudio">Blog Reaccionestudio</a>
+												<a href="./projects/blog-reaccionestudio.php" title="Blog Reaccionestudio" class="right-icon" data-lightbox="iframe">Blog Reaccion Estudio</a>
 											</h3>
 											<span>Website</span>
 										</div>
@@ -377,7 +344,7 @@
 										</div>
 										<div class="portfolio-desc">
 											<h3>
-												<a href="./projects/reaccionestudio.php" title="Reaccionestudio">Reaccionestudio</a>
+												<a href="./projects/reaccionestudio.php" class="right-icon" title="Reaccionestudio" data-lightbox="iframe">Reaccion Estudio</a>
 											</h3>
 											<span>Website</span>
 										</div>
@@ -399,68 +366,47 @@
 						<span>You want to talk? Contact us using the form below</span>
 					</div>
 
-					<!-- Contact Info
-					============================================= -->
+					<!-- Contact Info -->
 					<div class="col-md-10 col-md-offset-1 nobottommargin clearfix">
+
+						<div class="alert alert-danger hidden" id="form-contact-errors"></div>
+						<div class="alert alert-success hidden" id="form-contact-email-sent">Your message has been sent correctly. We will contact you as soon as posible.</div>
 
 						<div class="nobottommargin">
 
-							<div data-notify-msg="&lt;i class=icon-ok-sign&gt;&lt;/i&gt; Message Sent Successfully!" data-notify-type="success" id="contact-form-result"></div>
-
-							<form method="post" action="include/sendemail-new.php" name="template-contactform" id="template-contactform" class="nobottommargin" novalidate="novalidate">
-
-								<div class="form-process"></div>
+							<form method="post" name="template-contactform" id="template-contactform" class="nobottommargin" novalidate="novalidate">
 
 								<div class="col_one_third">
-									<label for="template-contactform-name">Name <small>*</small></label>
-									<input type="text" class="sm-form-control required" value="" name="template-contactform-name" id="template-contactform-name" aria-required="true">
+									<label for="contactform-name">Name <small>*</small></label>
+									<input type="text" class="sm-form-control required" value="" name="contactform-name" id="contactform-name" />
 								</div>
 
 								<div class="col_one_third">
-									<label for="template-contactform-email">Email <small>*</small></label>
-									<input type="email" class="required email sm-form-control" value="" name="template-contactform-email" id="template-contactform-email" aria-required="true">
+									<label for="contactform-email">Email <small>*</small></label>
+									<input type="email" class="required email sm-form-control" value="" name="contactform-email" id="contactform-email" />
 								</div>
 
 								<div class="col_one_third col_last">
-									<label for="template-contactform-phone">Phone</label>
-									<input type="text" class="sm-form-control" value="" name="template-contactform-phone" id="template-contactform-phone">
+									<label for="contactform-phone">Phone</label>
+									<input type="text" class="sm-form-control" value="" name="contactform-phone" id="contactform-phone">
 								</div>
 
 								<div class="clear"></div>
 
-								<div class="col_two_third">
-									<label for="template-contactform-subject">Subject <small>*</small></label>
-									<input type="text" class="required sm-form-control" value="" name="template-contactform-subject" id="template-contactform-subject" aria-required="true">
+								<div class="col_three_third">
+									<label for="contactform-subject">Subject <small>*</small></label>
+									<input type="text" class="required sm-form-control" value="" name="contactform-subject" id="contactform-subject" />
 								</div>
-
-								<div class="col_one_third col_last">
-									<label for="template-contactform-service">Services</label>
-									<select class="sm-form-control" name="template-contactform-service" id="template-contactform-service">
-										<option value="">-- Select one option --</option>
-										<option value="Software development">Software development</option>
-										<option value="Virtual private servers">Virtual private servers</option>
-										<option value="Search optimization">Search optimization</option>
-										<option value="Technical support">Technical support</option>
-										<option value="Web apps & Websites">Web apps & Websites</option>
-										<option value="Web desing">Web desing</option>
-										<option value="Others">Other</option>
-									</select>
-								</div>
-
 								<div class="clear"></div>
-
-								<div class="col_full" style="display: none;">
-									<label for="template-contactform-nophone">Phone</label>
-									<input type="text" value="" class="sm-form-control" name="template-contactform-nophone" id="template-contactform-nophone">
-								</div>
+								<br />
 
 								<div class="col_full">
-									<label for="template-contactform-message">Message <small>*</small></label>
-									<textarea cols="30" rows="6" name="template-contactform-message" id="template-contactform-message" class="required sm-form-control" aria-required="true"></textarea>
+									<label for="contactform-message">Message <small>*</small></label>
+									<textarea cols="30" rows="6" name="contactform-message" id="contactform-message" class="required sm-form-control" /></textarea>
 								</div>
 
 								<div class="col_full text-center">
-									<button value="submit" name="template-contactform-submit" id="template-contactform-submit" type="submit" class="button button-3d nomargin">Send Message</button>
+									<button name="contactform-submit" id="contactform-submit" class="button button-3d nomargin">Send Message</button>
 								</div>
 
 							</form>
@@ -474,12 +420,10 @@
 
 		</section><!-- #content end -->
 
-		<!-- Footer
-		============================================= -->
+		<!-- Footer -->
 		<footer id="footer" class="dark">
 
-			<!-- Copyrights
-			============================================= -->
+			<!-- Copyrights -->
 			<div id="copyrights">
 
 				<div class="container clearfix">
@@ -531,85 +475,21 @@
 
 	</div><!-- #wrapper end -->
 
-	<!-- Go To Top
-	============================================= -->
+	<!-- Go To Top -->
 	<div id="gotoTop" class="icon-angle-up"></div>
 
-	<!-- Footer Scripts
-	============================================= -->
+	<!-- Footer Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<?php if($_SERVER['SERVER_NAME'] == "localhost"){ ?>
+	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
-	
-	<!-- Portfolio Script
-	============================================= -->
-	<script type="text/javascript">
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/contacto.js"></script>
+	<script type="text/javascript">var contact = new Contact();contact.events();</script>
+	<?php }else{ ?>
 
-		jQuery(window).load(function(){
-
-			var $container = $('#portfolio');
-
-			$container.isotope({ transitionDuration: '0.65s' });
-
-			function getHashFilter() {
-				var hash = location.hash;
-				// get filter=filterName
-				var matches = location.hash.match( /filter=([^&]+)/i );
-				var hashFilter = matches && matches[1];
-				return hashFilter && decodeURIComponent( hashFilter );
-			}
-
-			var isIsotopeInit = false;
-
-			function onHashchange() {
-				var hashFilter = getHashFilter();
-				if ( !hashFilter && isIsotopeInit ) {
-					return;
-				}
-				isIsotopeInit = true;
-				// filter isotope
-				$container.isotope({ filter: hashFilter });
-				// set selected class on button
-				if ( hashFilter ) {
-					$('#portfolio-filter li').removeClass('activeFilter');
-					$('#portfolio-filter li').find('[data-filter="' + hashFilter + '"]').parent('li').addClass('activeFilter');
-				}
-			}
-
-			$(window).on( 'hashchange', onHashchange );
-			// trigger event handler to init Isotope
-			onHashchange();
-
-			$('#portfolio-filter a').click(function(){
-				$('#portfolio-filter li').removeClass('activeFilter');
-				$(this).parent('li').addClass('activeFilter');
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector });
-				var filterAttr = $( this ).attr('data-filter');
-				location.hash = 'filter=' + encodeURIComponent( filterAttr );
-				return false;
-			});
-
-			$('#portfolio-shuffle').click(function(){
-				$container.isotope('updateSortData').isotope({
-					sortBy: 'random'
-				});
-			});
-
-			$(window).resize(function() {
-				$container.isotope('layout');
-			});
-
-			$("div.btn-down-scroll a").on("click", function(e)
-			{
-				e.preventDefault();
-
-				var services_pos = $("div#section-services").offset().top;
-				services_pos = services_pos - 200;
-				$('body,html').stop(true).animate({ scrollTop:services_pos + "px" }, 600);
-			});
-
-		});
-
-	</script><!-- Portfolio Script End -->
+	<?php } ?>
 
 </body>
 </html>
