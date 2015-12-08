@@ -13169,13 +13169,24 @@ div.btn-down-scroll a:hover{
 .logo{
 	padding-top:30px;
 }
+
 .logo-font-size{
 	font-weight:bold;
 	font-size:46px;
 }
-.logo .icon-beaker{
-	font-size:40px;
+.font-probeta{
+	font-size:46px;
 }
+
+@media (max-width: 480px) { 
+	.logo-font-size{
+		font-size:30px;
+	}
+	.font-probeta{
+		font-size:25px !important;
+	}
+}
+
 .standard-logo{
 	padding-top:35px;
 }
