@@ -1083,7 +1083,6 @@ var SEMICOLON = SEMICOLON || {};
 					$('#page-menu:not(.dots-menu,.no-sticky)').addClass('sticky-page-menu');
 					if( !$headerWrap.hasClass('force-not-dark') ) { $headerWrap.removeClass('not-dark'); }
 					SEMICOLON.header.stickyMenuClass();
-					$("a.standard-logo").css("padding-top", "13px");
 				} 
 				else if( $body.hasClass('device-xs') || $body.hasClass('device-xxs') || $body.hasClass('device-sm') ) 
 				{
@@ -1098,7 +1097,6 @@ var SEMICOLON = SEMICOLON || {};
 			}
 			else 
 			{
-				$("a.standard-logo").css("padding-top", "32px");
 				SEMICOLON.header.removeStickyness();
 			}
 		},

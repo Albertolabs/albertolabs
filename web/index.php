@@ -42,7 +42,9 @@
 
 					<div id="logo">
 
-						<a title="Home" href="#" class="standard-logo"><span class="logo-font-size">ALBERTO<span class="color_green logo-font-size">L</span></span><span class="color_green logo-font-size"><i class="color_green_dark font-probeta icon-beaker"></i><span class="logo-font-size">BS</span></span></a>
+						<a title="Home" href="#" class="standard-logo">
+							<img src="http://www.albertolabs.com/images/logolabs.png" />
+						</a>
 						
 					</div><!-- #logo end -->
 
