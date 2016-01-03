@@ -1,5 +1,17 @@
 jQuery(window).load(function()
 {
+    // checks url params
+    var currentUrl = window.location;
+    var contactReg = new RegExp("#contact$");
+
+    // goes to contact section
+    if(contactReg.test(currentUrl))
+    {
+        var contactPosition = $("#section-contact").offset().top - 200;
+        $("html, body").animate({scrollTop:contactPosition + "px"});
+    }
+    // end check url params
+
     var $container = $('#portfolio');
 
     $container.isotope({ transitionDuration: '0.65s' });
