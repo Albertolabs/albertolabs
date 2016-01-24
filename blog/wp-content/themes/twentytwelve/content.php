@@ -43,6 +43,11 @@
 		<div class="entry-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+
+			<?php if ( is_single() ) :  // author box only in full post ?>
+				<?php if ( function_exists( 'wpsabox_author_box' ) ) echo wpsabox_author_box(); ?>
+			<?php endif; ?>
+
 		</div><!-- .entry-content -->
 		<?php endif; ?>
 
