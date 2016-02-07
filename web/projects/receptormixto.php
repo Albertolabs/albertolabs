@@ -51,7 +51,7 @@
 					<h3>About</h3>
 
 					<p>Receptormixto is a web application used by a lottery administration where they can upload the results from different raffles.</p>
-					<p>Lottery administration has a touch monitor where is displayed the web application for query the results by their customers.</p>
+					<p>Lottery administration has a touch monitor where is displayed the web application which shows the results to the customers.</p>
 					<p>Results are classified by raffles and dates, creating a history with all the data.</p>
 
 				</div>
