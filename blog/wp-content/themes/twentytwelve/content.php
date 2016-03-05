@@ -28,6 +28,7 @@
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h1>
 			<?php endif; // is_single() ?>
+
 			<?php if ( comments_open() ) : ?>
 				<div class="comments-link">
 					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
@@ -41,8 +42,17 @@
 		</div><!-- .entry-summary -->
 		<?php else : ?>
 		<div class="entry-content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+
+			<?php the_excerpt() ?>
+
+			<?php 
+				wp_link_pages( 
+					array( 
+						'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 
+						'after' => '</div>' 
+					) 
+				); 
+			?>
 
 			<?php if ( is_single() ) :  // author box only in full post ?>
 				<?php if ( function_exists( 'wpsabox_author_box' ) ) echo wpsabox_author_box(); ?>
