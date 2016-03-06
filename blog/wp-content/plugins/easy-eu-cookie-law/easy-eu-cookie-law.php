@@ -10,7 +10,6 @@
     * License: GPL2
     */
 
-    include_once 'config.php';
     include_once 'includes/CookieManager.php';
     include_once 'includes/AdminForm.php';
         
@@ -53,7 +52,7 @@
 
     function cookieLawSettings()
     {   
-        include_once("lang/".lang.".php");
+        include_once("lang/" . get_option('eecl_language') . ".php");
 
         // load config
         $eecl_language  = get_option('eecl_language');
@@ -69,6 +68,7 @@
         $cookie = new Cookie_law();
         
         echo ($cookie->hideCookieMessage()) ? "OK" : "ERROR";
+
         wp_die();
     }
     
@@ -99,19 +99,22 @@
         createDefaultOptions();
     }
 
+    // plugin
     add_action( 'init', 'setInitCookie');
     add_action('wp_enqueue_scripts', 'loadPluginAssets');
     add_action('admin_menu', 'adminPanel');
     add_action( 'get_footer', 'initCookieLawPlugin');
     add_action( 'admin_footer', 'saveSettingsAssets');
     
-    //ajax
-    add_action('wp_ajax_nopriv_ocultar_msj', 'hideMessage');
-    add_action('wp_ajax_ocultar_msj', 'hideMessage');  
+    // hide cookie message ajax
+    add_action('wp_ajax_nopriv_hideMessage', 'hideMessage');
+    add_action('wp_ajax_hideMessage', 'hideMessage'); 
+     
+    // save plugin config ajax
     add_action('wp_ajax_nopriv_save_settings', 'save_settings');
     add_action('wp_ajax_save_settings', 'save_settings');
 
-    // plugin activation
+    // plugin activation database config insertion
     register_activation_hook( __FILE__ , 'plugin_activate' );
 
 ?>

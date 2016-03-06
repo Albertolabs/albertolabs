@@ -55,9 +55,7 @@
          */
          public function hideCookieMessage()
          {
-             $value = "hide";
-             $res = setcookie($this->cookie_name,$value,null,"/",null);
-             return $res;
+             return setcookie($this->cookie_name, 'hide' , null, "/", null);
          }
          
      }

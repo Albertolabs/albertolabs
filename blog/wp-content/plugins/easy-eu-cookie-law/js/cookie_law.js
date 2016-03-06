@@ -1,8 +1,8 @@
 jQuery(document).ready(function()
 {
     // Accept buttonn event
-    jQuery("a#cerrar_msj").click(function(event){
-        
+    jQuery("a#cerrar_msj").click(function(event)
+    {
         event.preventDefault();
         
         jQuery.post(ocultar_msj_url,
