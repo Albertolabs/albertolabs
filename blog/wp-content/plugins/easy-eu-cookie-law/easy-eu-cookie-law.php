@@ -4,7 +4,7 @@
     * Plugin Name: Easy EU Cookie law
     * Plugin URI: http://www.albertolabs.com/
     * Description: Plugin for the new European cookie law.
-    * Version: 1.2.5
+    * Version: 1.3
     * Author: Albertolabs.com
     * Author URI: http://www.albertolabs.com/
     * License: GPL2

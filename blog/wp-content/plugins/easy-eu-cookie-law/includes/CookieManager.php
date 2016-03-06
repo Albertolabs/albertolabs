@@ -1,10 +1,5 @@
 <?php
 
-    /*
-     * Cookies law script.
-     * http://www.albertolabs.com
-     */
-
      class Cookie_law
      {
          public $cookie_name;

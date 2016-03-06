@@ -4,7 +4,7 @@ Donate link:
 Tags: cookie, cookies, privacy, european, law, accept 
 Requires at least: 3.8
 Tested up to: 4.3.1
-Stable tag: 1.2.5
+Stable tag: 1.3
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,9 +21,8 @@ Not database is required.
 == Installation ==
 
 1. Upload `cookie_law` folder to the `/wp-content/plugins/` directory
-2. Change all files permissions to writable (777).
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Configure your settings in the 'Cookie law' menu.
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Configure your settings in the 'Cookie law' menu.
 
 == Frequently Asked Questions ==
 
@@ -36,6 +35,12 @@ No, only alerts the user the use of cookies on the website.
 2. Cookie law configuration panel
 
 == Changelog ==
+
+= 1.3 =
+* Configuration values saved are not reset when updating the plugin
+* Config values are now saved on 'wp_options' database table.
+* Config options form works now with Ajax
+* Refactored code
 
 = 1.2.5 =
 * Italian translation (Thanks to Umberto for the translation).
