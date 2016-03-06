@@ -45,7 +45,7 @@
 
     function saveSettingsAssets()
     {
-        wp_enqueue_script( 'admin_js', plugins_url( '/js/admin.js', __FILE__ ), array('jquery') );
+        wp_enqueue_script( 'admin_js', plugins_url( '/js/admin.min.js', __FILE__ ), array('jquery') );
         wp_localize_script( 'admin_js', 'the_ajax_script',
             array( 'ajax_url' => admin_url( 'admin-ajax.php' )) 
         );
