@@ -7,7 +7,7 @@ jQuery(document).ready(function()
         
         jQuery.post(ocultar_msj_url,
         { 
-            action: 'ocultar_msj'
+            action: 'hideMessage'
         },
         function(data)
         {

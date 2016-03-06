@@ -10,51 +10,40 @@
     * License: GPL2
     */
 
-    include_once("config.php");
-    include_once("lib.php");
+    include_once 'config.php';
+    include_once 'includes/CookieManager.php';
+    include_once 'includes/AdminForm.php';
         
-    function run_cookie_law()
+    function initCookieLawPlugin()
     {
-        include_once("lang/".lang.".php");
+        include_once("lang/" . get_option('eecl_language') . ".php");
+
         $cookie = new Cookie_law();
 
-        if($cookie->mostrar_mensaje())
+        if($cookie->showCookieMessage())
         {            
-            echo '<div class="wrap_cookies ' . position . ' font-white '.color.'">
+            echo '<div class="wrap_cookies ' . get_option('eecl_position') . ' font-white ' . get_option('eecl_color') . '">
                     <div class="message">
-                        '.$lang["cookie_text"].'<a href="'. get_more_info_url() .'" class="under" title="'.ucfirst($lang["polit_cook"]).'">'.$lang["polit_cook"].'</a>. &nbsp;&nbsp;&nbsp; <a href="#" id="cerrar_msj" title="'.$lang["accept"].'"><span class="cerrar_msj">'.strtoupper($lang["accept"]).'</span></a>
+                        ' . $lang["cookie_text"] . '
+                        <a href="'. get_option('eecl_more_info_url') .'" class="under" title="'.ucfirst($lang["polit_cook"]).'">' 
+                            . $lang["polit_cook"] .
+                        '</a>. 
+                        &nbsp;&nbsp;&nbsp; 
+                        <a href="#" id="cerrar_msj" title="' . $lang["accept"] . '"><span class="cerrar_msj">'.strtoupper($lang["accept"]).'</span></a>
                     </div>
                 </div>';
-
         }
-    
     }
     
-    function panel_admin()
+    function adminPanel()
     {
         if(is_admin())
-            add_menu_page("Cookie Law","Cookie Law","administrator","slug_menu","cookie_law_settings","dashicons-book-alt");
-    }
-    
-    function get_more_info_url()
-    {
-        $more_info_url = "#";
-
-        $more_info_file = plugin_dir_path(__FILE__)."more_info.config";
-
-        if(file_exists($more_info_file))
         {
-            $more_info_url = file_get_contents($more_info_file);
+            add_menu_page("Cookie Law","Cookie Law","administrator","slug_menu","cookieLawSettings","dashicons-book-alt");
         }
-        else
-        {
-            file_put_contents($more_info_file, "");
-        }
-
-        return $more_info_url;
     }
 
-    function js_save_cookie_law_settings()
+    function saveSettingsAssets()
     {
         wp_enqueue_script( 'admin_js', plugins_url( '/js/admin.js', __FILE__ ), array('jquery') );
         wp_localize_script( 'admin_js', 'the_ajax_script',
@@ -62,31 +51,38 @@
         );
     }
 
-    function cookie_law_settings()
+    function cookieLawSettings()
     {   
         include_once("lang/".lang.".php");
+
+        // load config
+        $eecl_language  = get_option('eecl_language');
+        $eecl_position  = get_option('eecl_position');
+        $eecl_color     = get_option('eecl_color');
+        $eecl_url       = get_option('eecl_more_info_url');
+
         require_once("admin_form.php");
     }
     
-    function ocultar_msj()
+    function hideMessage()
     {
         $cookie = new Cookie_law();
         
-        echo ($cookie->ocultar_mensaje()) ? "OK" : "ERROR";
+        echo ($cookie->hideCookieMessage()) ? "OK" : "ERROR";
         wp_die();
     }
     
-    function set_cookie()
+    function setInitCookie()
     {
         $cookie = new Cookie_law();
         
-        if($cookie->comprobar_cookie())
+        if($cookie->checkCookie())
         {
-            $cookie->enviar_cookie();
+            $cookie->sendCookie();
         }
     }
 	
-    function cargar_archivos()
+    function loadPluginAssets()
     {
         wp_enqueue_style( 'style_cookie_law', plugins_url( 'css/style.min.css' , __FILE__ ), false );
         wp_enqueue_script( 'cookie_law_js', plugins_url( 'js/cookie_law.min.js' , __FILE__ ), array( 'jquery' ) );
@@ -95,64 +91,27 @@
 
     function save_settings()
     {
-        $ret = array('STATUS' => 'ERROR', 'ERROR' => 'INIT');
-
-        $more_info_url = get_more_info_url();
-
-        if( ! empty($_POST['formData']))
-        {
-            $path = plugin_dir_path(__FILE__)."config.php";
-            $data = get_text_file_in_array($path);
-
-            if(count($data))
-            {
-                foreach($_POST['formData'] as $key => $value)
-                {
-                    if($key != "more_info_url")
-                    {
-                        $lines = array_search_preg("\"".$key."\"",$data);
-
-                        if(count($lines)==1)
-                        {
-                            $line = $lines[0];
-                            $value = $value; //sanitize $value
-                            $data[$line] = "define(\"".$key."\",\"".$value."\");\n";
-                        }
-                    }
-                }
-                
-                //montar string
-                $config = "<?php".mount_text_array_to_string($data);
-                
-                //write file
-                $res = write_file(plugin_dir_path(__FILE__)."config.php",$config);
-
-                // saves url cookies terms
-                $more_info_file = plugin_dir_path(__FILE__)."more_info.config";
-
-                if( ! empty($_POST['more_info_url']))
-                {
-                    file_put_contents($more_info_file, $_POST['more_info_url']);
-                }
-        
-                $ret['STATUS'] = 'OK';
-            }
-        }
-
-        echo json_encode($ret);
-        wp_die();
+        saveSettings();
     }
-    
-    add_action( 'init', 'set_cookie');
-    add_action('wp_enqueue_scripts', 'cargar_archivos');
-    add_action('admin_menu', 'panel_admin');
-    add_action( 'get_footer', 'run_cookie_law');
-    add_action( 'admin_footer', 'js_save_cookie_law_settings');
+
+    function plugin_activate()
+    {
+        createDefaultOptions();
+    }
+
+    add_action( 'init', 'setInitCookie');
+    add_action('wp_enqueue_scripts', 'loadPluginAssets');
+    add_action('admin_menu', 'adminPanel');
+    add_action( 'get_footer', 'initCookieLawPlugin');
+    add_action( 'admin_footer', 'saveSettingsAssets');
     
     //ajax
-    add_action('wp_ajax_nopriv_ocultar_msj', 'ocultar_msj');
-    add_action('wp_ajax_ocultar_msj', 'ocultar_msj');  
+    add_action('wp_ajax_nopriv_ocultar_msj', 'hideMessage');
+    add_action('wp_ajax_ocultar_msj', 'hideMessage');  
     add_action('wp_ajax_nopriv_save_settings', 'save_settings');
     add_action('wp_ajax_save_settings', 'save_settings');
+
+    // plugin activation
+    register_activation_hook( __FILE__ , 'plugin_activate' );
 
 ?>
