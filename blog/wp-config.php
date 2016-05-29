@@ -27,9 +27,9 @@ if($_SERVER['SERVER_NAME'] == "localhost")
 else
 {
 	define('DB_NAME', 'albertolabs_blog');
-	define('DB_USER', 'dev_all');
-	define('DB_PASSWORD', '181302');
-	define('DB_HOST', '178.33.202.66');
+	define('DB_USER', 'dbu_prod');
+	define('DB_PASSWORD', 'arI7*4g4');
+	define('DB_HOST', '188.165.200.43');
 }
 
 /** Codificación de caracteres para la base de datos. */
