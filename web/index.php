@@ -217,7 +217,7 @@
 
 						<div id="section-projects" class="heading-block title-center page-section">
 							<h2>Projects</h2>
-							<span>Some recent projects we have done</span>
+							<span>Projects we have done recently</span>
 						</div>
 
 						<div class="pricing bottommargin clearfix">
