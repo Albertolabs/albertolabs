@@ -8,7 +8,8 @@
 	<!-- portfolio items -->		
 	<div class="content-wrap" style="padding:0;">
 
-		<!-- Portfolio Filter
+	<?php /*
+		<!-- Portfolio Filter -->
 		============================================= 
 		<ul id="portfolio-filter" class="clearfix">
 
@@ -21,7 +22,9 @@
 		<!--
 		<div id="portfolio-shuffle">
 			<i class="icon-random"></i>
-		</div>-->
+		</div>
+
+		*/ ?>
 		
 		<div class="clear"></div>
 
@@ -153,6 +156,11 @@
 			</article>
 
 		</div><!-- #portfolio end -->
+
+		<br />
+		<div class="text-center">
+			<a class="button button-3d nomargin" title="Visit website" href="index.php?p=projects">View all projects</a>
+		</div>
 
 	</div><!-- end portfolio items -->
 

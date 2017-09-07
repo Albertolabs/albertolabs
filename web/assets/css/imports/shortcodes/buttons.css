@@ -23,7 +23,7 @@
 	height: 40px;
 	line-height: 40px;
 	background-color: #1ABC9C;
-	color: #FFF;
+	color: #FFF !important;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -47,7 +47,7 @@ body:not(.device-touch) .button {
 
 .button:hover {
 	background-color: #444;
-	color: #FFF;
+	color: #FFF !important;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
@@ -81,7 +81,6 @@ body:not(.device-touch) .button {
 	height: 52px;
 	line-height: 52px;
 }
-
 .button.button-desc {
 	text-align: left;
 	padding: 24px 34px;
@@ -89,8 +88,8 @@ body:not(.device-touch) .button {
 	height: auto;
 	line-height: 1;
 	font-family: 'Raleway', sans-serif;
+	color: #FFF !important;
 }
-
 .button.button-desc span {
 	display: block;
 	margin-top: 10px;
@@ -136,7 +135,7 @@ body:not(.device-touch) .button {
 
 .button.button-desc.tright i { margin: 0 0 0 12px; }
 
-.button.button-desc div { display: inline-block; }
+.button.button-desc div { display: inline-block; color: #FFF !important; }
 
 .button.button-rounded { border-radius: 3px; }
 

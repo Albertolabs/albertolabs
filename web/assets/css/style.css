@@ -13201,3 +13201,7 @@ div#form-contact-errors ul{
 .alert-success, .alert-danger{
 	font-size:16px;
 }
+.button-desc-sm{
+	font-size: 16px !important;
+	padding: 14px 24px !important;
+}

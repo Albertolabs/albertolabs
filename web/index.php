@@ -16,7 +16,7 @@
 
 					<div class="container clearfix">
 
-						<?php loadRoute($routing); ?>
+						<?php $router->loadRoute(); ?>
 
 					</div>
 				</div>
