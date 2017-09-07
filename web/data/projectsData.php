@@ -2,6 +2,14 @@
 
 	$projectsData = array(
 
+		'lantigua' => array(
+			'img_thumb' => 'lantigua-thumb.jpg',
+			'img_full' => 'lantigua-full.jpg',
+			'title' => 'Lantigua Casa Rural',
+			'type' => 'Website',
+			'filters' => 'pf-websites',
+			'route' => '#'
+		),
 		'sombeo' => array(
 			'img_thumb' => 'sombeo-thumb.jpg',
 			'img_full' => 'sombeo-full.jpg',
@@ -39,6 +47,14 @@
 			'img_full' => 'team-data-repository-full.jpg',
 			'title' => 'Team Data Repository',
 			'type' => 'Software, Web application',
+			'filters' => 'pf-websites pf-software',
+			'route' => '#'
+		),
+		'easy_eu_cookie_law' => array(
+			'img_thumb' => 'wp-easy-eu-cookie-law.jpg',
+			'img_full' => 'wp-easy-eu-cookie-law.jpg',
+			'title' => 'Easy Eu Cookie Law',
+			'type' => 'Software, WordPress Plugin',
 			'filters' => 'pf-websites pf-software',
 			'route' => '#'
 		),

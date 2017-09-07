@@ -15,7 +15,10 @@
 
 			<?php
 				require 'data/projectsData.php';
+
+				$i = 1;
 				foreach($projectsData as $key => $project){
+					$i++;
 			?>
 			<article class="portfolio-item pf-media <?= $project['filters'] ?>">
 				<div class="portfolio-image">
@@ -31,7 +34,7 @@
 					<span><?= $project['type'] ?></span>
 				</div>
 			</article>
-			<?php } ?>
+			<?php if($i > 8) break; } ?>
 
 		</div><!-- #portfolio end -->
 
