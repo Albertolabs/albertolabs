@@ -95,10 +95,11 @@ var Contact = ( function()
                 data.subject = $("input#contactform-subject").val();
                 data.message = $("textarea#contactform-message").val();
 
-            $.post("./includes/send_email.php", data, function(result)
+            $.post("./plugins/email/send_email.php", data, function(result)
             {
                 if(result.STATUS == "OK")
                 {
+                    // TODO: scroll to message
                     $("div#form-contact-email-sent").removeClass("hidden");
                 }
                 else

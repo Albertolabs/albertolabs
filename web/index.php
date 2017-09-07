@@ -16,7 +16,7 @@
 
 					<div class="container clearfix">
 
-						<?php // include 'content/pages/home.php'; ?>
+						<?php loadRoute($routing); ?>
 
 					</div>
 				</div>

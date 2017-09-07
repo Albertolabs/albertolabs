@@ -1,3 +1,8 @@
 <?php
 
-	$routing = array();
+	$routing = array(
+
+		'home' => 'pages/home/home.php'
+		//'projects' => 'pages/projects'
+
+	);
