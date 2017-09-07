@@ -9,15 +9,15 @@
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous" />
 
-	<?php if($_SERVER['SERVER_NAME'] == "localhost"){ ?>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<?php if($_SERVER['SERVER_NAME'] != "localhost"){ // mod == ?>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
 	<?php }else{ ?>
-	<link rel="stylesheet" href="css/index.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/index.min.css" type="text/css" />
 	<?php } ?>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -93,7 +93,7 @@
 
 						<div class="page-section text-center">
 
-							<img src="images/icons/macbook.png" title="Freelance Full-Stack developer" alt="Freelance Full-Stack developer" />
+							<img src="assets/images/icons/macbook.png" title="Freelance Full-Stack developer" alt="Freelance Full-Stack developer" />
 
 						</div>
 						<div class="clear"></div>
@@ -247,7 +247,7 @@
 
 									<article class="portfolio-item pf-media pf-icons">
 										<div class="portfolio-image">
-											<img src="images/projects/sombeo-thumb.jpg" title="Sombeo" alt="Sombeo" />
+											<img src="assets/images/projects/sombeo-thumb.jpg" title="Sombeo" alt="Sombeo" />
 
 											<div class="portfolio-overlay">
 												<a href="./projects/sombeo.php" title="Ver más sobre Sombeo" class="right-icon" data-lightbox="iframe"><i class="icon-line-plus"></i></a>
@@ -264,7 +264,7 @@
 									<article class="portfolio-item pf-media pf-icons">
 										<div class="portfolio-image">
 
-											<img title="Perretes" src="images/projects/perretes-thumb.jpg" title="Perretes" alt="Perretes" />
+											<img title="Perretes" src="assets/images/projects/perretes-thumb.jpg" title="Perretes" alt="Perretes" />
 
 											<div class="portfolio-overlay">
 												<a href="./projects/perretes.php" title="Ver más sobre Perretes" class="right-icon" data-lightbox="iframe"><i class="icon-line-plus"></i></a>
@@ -280,7 +280,7 @@
 
 									<article class="portfolio-item pf-media pf-icons">
 										<div class="portfolio-image">
-											<img src="images/projects/womp-thumb.jpg" alt="Womp" title="Womp" />
+											<img src="assets/images/projects/womp-thumb.jpg" alt="Womp" title="Womp" />
 											<div class="portfolio-overlay">
 												<a href="./projects/womp.php" title="Womp" title="Ver más sobre Womp" class="right-icon" data-lightbox="iframe"><i class="icon-line-plus"></i></a>
 											</div>
@@ -295,7 +295,7 @@
 
 									<article class="portfolio-item pf-media pf-icons">
 										<div class="portfolio-image">
-											<img src="images/projects/receptormixto-thumb.jpg" alt="Receptormixto" title="Receptormixto">
+											<img src="assets/images/projects/receptormixto-thumb.jpg" alt="Receptormixto" title="Receptormixto">
 											<div class="portfolio-overlay">
 												<a href="./projects/receptormixto.php" title="Receptormixto" class="right-icon" data-lightbox="iframe"><i class="icon-line-plus"></i></a>
 											</div>
@@ -310,7 +310,7 @@
 
 									<article class="portfolio-item pf-media pf-icons">
 										<div class="portfolio-image">
-											<img src="images/projects/team-data-repository-thumb.jpg" alt="Team Data Repository Software" title="Team Data Repository Software" />
+											<img src="assets/images/projects/team-data-repository-thumb.jpg" alt="Team Data Repository Software" title="Team Data Repository Software" />
 											<div class="portfolio-overlay">
 												<a href="./projects/team-data-repository.php" title="Team data repository Software" class="right-icon" data-lightbox="iframe"><i class="icon-line-plus"></i></a>
 											</div>
@@ -326,7 +326,7 @@
 
 									<article class="portfolio-item pf-media pf-icons">
 										<div class="portfolio-image">
-											<img src="images/projects/team-data-repository-website-thumb.jpg" alt="Team Data Repository Website" title="Team Data Repository Website" />
+											<img src="assets/images/projects/team-data-repository-website-thumb.jpg" alt="Team Data Repository Website" title="Team Data Repository Website" />
 											<div class="portfolio-overlay">
 												<a href="./projects/team-data-repository-website.php" title="Team data repository" class="right-icon" data-lightbox="iframe"><i class="icon-line-plus"></i></a>
 											</div>
@@ -341,7 +341,7 @@
 
 									<article class="portfolio-item pf-media pf-icons">
 										<div class="portfolio-image">
-											<img src="images/projects/blog-reaccionestudio-thumb.jpg" alt="Blog Reaccionestudio" title="Blog Reaccionestudio" />
+											<img src="assets/images/projects/blog-reaccionestudio-thumb.jpg" alt="Blog Reaccionestudio" title="Blog Reaccionestudio" />
 											<div class="portfolio-overlay">
 												<a href="./projects/blog-reaccionestudio.php" title="Blog Reaccionestudio" class="right-icon" data-lightbox="iframe"><i class="icon-line-plus"></i></a>
 											</div>
@@ -356,7 +356,7 @@
 
 									<article class="portfolio-item pf-media pf-icons">
 										<div class="portfolio-image">
-											<img src="images/projects/reaccionestudio-thumb.jpg" alt="Reaccionestudio" title="Reaccionestudio" />
+											<img src="assets/images/projects/reaccionestudio-thumb.jpg" alt="Reaccionestudio" title="Reaccionestudio" />
 											<div class="portfolio-overlay">
 												<a href="./projects/reaccionestudio.php" class="right-icon" title="Reaccionestudio" data-lightbox="iframe"><i class="icon-line-plus"></i></a>
 											</div>
@@ -501,12 +501,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 	<?php if($_SERVER['SERVER_NAME'] == "localhost"){ ?>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/contacto.js"></script>
+	<script type="text/javascript" src="assets/js/plugins.js"></script>
+	<script type="text/javascript" src="assets/js/functions.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script type="text/javascript" src="assets/js/contacto.js"></script>
 	<?php }else{ ?>
-	<script type="text/javascript" src="js/index.min.js"></script>
+	<script type="text/javascript" src="assets/js/index.min.js"></script>
 	<?php } ?>
 
 	<script type="text/javascript">var contact = new Contact();contact.events();</script>
