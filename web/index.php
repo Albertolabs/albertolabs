@@ -12,15 +12,8 @@
 
 			<section id="content">
 
-				<div class="content-wrap">
-
-					<div class="container clearfix">
-
-						<?php $router->loadRoute(); ?>
-
-					</div>
-				</div>
-
+				<?php $router->loadRoute(); ?>
+				
 			</section><!-- #content end -->
 
 			<?php include 'themes/footer.php'; ?>			

@@ -74,13 +74,14 @@ jQuery(window).load(function()
         $('body,html').stop(true).animate({ scrollTop:services_pos + "px" }, 600);
     });
 
-    $("div.portfolio-image").on("click", function()
+    $("div.portfolio-image").on("click", function(e)
     {
-        var link = $(this).find("div.portfolio-overlay a").attr("href");
+        var link = $(this).find("div.portfolio-overlay a");
+        var url = link.attr("href");
 
-        if(link.length)
+        if(url.length)
         {
-            $(this).find("div.portfolio-overlay a").click();
+            window.location = url;
         }
     });
 

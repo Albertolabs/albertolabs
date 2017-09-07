@@ -26,7 +26,7 @@
 						<a href="#" title="Services" data-href="#section-services"><div><i class="icon-desktop"></i> Services</div></a>
 					</li>
 					<li>
-						<a href="#" title="Projects" data-href="#section-projects"><div><i class="icon-beaker"></i> Projects</div></a>
+						<a href="index.php?p=projects" title="Projects"><div><i class="icon-beaker"></i> Projects</div></a>
 					</li>
 					<li>
 						<a href="#" title="Contact" data-href="#section-contact"><div><i class="icon-bag"></i> Contact</div></a>
@@ -39,7 +39,7 @@
 						<a href="index.php#section-services" title="Services"><div><i class="icon-desktop"></i> Services</div></a>
 					</li>
 					<li class="active">
-						<a href="#" title="Projects"><div><i class="icon-beaker"></i> Projects</div></a>
+						<a href="index.php?p=projects" title="Projects"><div><i class="icon-beaker"></i> Projects</div></a>
 					</li>
 					<li>
 						<a href="index.php#section-contact" title="Contact"><div><i class="icon-bag"></i> Contact</div></a>

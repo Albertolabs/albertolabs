@@ -4,7 +4,7 @@
 	{
 		private $routing;
 
-		public function __construct($routing)
+		public function __construct($routing=array())
 		{
 			$this->routing = $routing;
 		}
@@ -20,7 +20,7 @@
 			else if( ! empty($requestedRoute) && ! array_key_exists($requestedRoute, $this->routing) )
 			{
 				// page not found
-				require 'themes/error404.php';
+				include 'themes/error404.php';
 				return;
 			}
 
@@ -41,7 +41,13 @@
 			}
 
 			return $requestedRoute;
-		}	
+		}
+
+		public function show404Error()
+		{
+			include 'themes/error404.php';
+			return;
+		}
 	}
 
 	

@@ -57,7 +57,7 @@
 			'tech' => array( 'HTML 5', 'CSS 3', 'Javascript', 'jQuery', 'Bootstrap 3', 'Responsive design', 'PHP 5', 'MySQL', 'Apache' ),
 			'demo' => 'http://www.receptormixto99705.com/'
 		),
-		'easy_eu_cookie_law' => array(
+		'easy-eu-cookie-law' => array(
 			'img_thumb' => 'wp-easy-eu-cookie-law.jpg',
 			'img_full' => 'wp-easy-eu-cookie-law.jpg',
 			'title' => 'Easy Eu Cookie Law',
@@ -68,7 +68,7 @@
 			'tech' => array('WordPress', 'PHP 5', 'Javascript', 'jQuery'),
 			'demo' => 'https://es.wordpress.org/plugins/easy-eu-cookie-law/'
 		),
-		'team_data_repository' => array(
+		'team-data-repository' => array(
 			'img_thumb' => 'team-data-repository-thumb.jpg',
 			'img_full' => 'team-data-repository-full.jpg',
 			'title' => 'Team Data Repository',
@@ -79,7 +79,7 @@
 			'tech' => array( 'HTML 5', 'CSS 3', 'Javascript', 'jQuery', 'Bootstrap 2', 'Responsive Design', 'CodeIgniter 2', 'PHP 5', 'MySQL', 'Nginx' ),
 			'demo' => 'http://www.teamdatarepository.com/demostration'
 		),
-		'team_data_repository-website' => array(
+		'team-data-repository-website' => array(
 			'img_thumb' => 'team-data-repository-website-thumb.jpg',
 			'img_full' => 'team-data-repository-website-full.jpg',
 			'title' => 'Team Data Repository',
@@ -90,7 +90,7 @@
 			'tech' => array( 'HTML 5', 'CSS 3', 'Javascript', 'jQuery', 'Responsive Design', 'CodeIgniter 2', 'PHP 5', 'MySQL', 'Nginx' ),
 			'demo' => 'http://www.teamdatarepository.com'
 		),
-		'blog_reaccionestudio' => array(
+		'blog-reaccionestudio' => array(
 			'img_thumb' => 'blog-reaccionestudio-thumb.jpg',
 			'img_full' => 'blog-reaccionestudio-full.jpg',
 			'title' => 'Blog Reacción Estudio',

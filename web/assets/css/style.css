@@ -13208,3 +13208,7 @@ div#form-contact-errors ul{
 li.active a{
 	color: #1ABC9C !important;
 }
+div.project-bg-image{
+	height:300px;
+	background:black;
+}
