@@ -8,10 +8,11 @@
 		{
 			$requestedRoute = defaultRoute;
 		}
-		else if( ! empty($requestedRoute) && ! in_array($requestedRoute, $routing) )
+		else if( ! empty($requestedRoute) && ! array_key_exists($requestedRoute, $routing) )
 		{
-			// not found
-			echo 'no existe';
+			// page not found
+			require 'themes/error404.php';
+			return;
 		}
 
 		require $routing[$requestedRoute];

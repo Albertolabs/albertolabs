@@ -2,7 +2,7 @@
 
 	$routing = array(
 
-		'home' => 'pages/home/home.php'
-		//'projects' => 'pages/projects'
+		'home' => 'pages/home/home.php',
+		'projects' => 'pages/projects/index.php'
 
 	);
