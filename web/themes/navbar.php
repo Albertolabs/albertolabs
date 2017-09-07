@@ -33,13 +33,13 @@
 					</li>
 					<?php }else{ ?>
 					<li>
-						<a href="index.php#section-home" title="Home"><div><i class="icon-home2"></i> Home</div></a>
+						<a href="index.php" title="Home"><div><i class="icon-home2"></i> Home</div></a>
 					</li>
 					<li>
 						<a href="index.php#section-services" title="Services"><div><i class="icon-desktop"></i> Services</div></a>
 					</li>
-					<li class="current">
-						<a href="index.php#section-projects" title="Projects"><div><i class="icon-beaker"></i> Projects</div></a>
+					<li class="active">
+						<a href="#" title="Projects"><div><i class="icon-beaker"></i> Projects</div></a>
 					</li>
 					<li>
 						<a href="index.php#section-contact" title="Contact"><div><i class="icon-bag"></i> Contact</div></a>
