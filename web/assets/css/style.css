@@ -13208,7 +13208,16 @@ div#form-contact-errors ul{
 li.active a{
 	color: #1ABC9C !important;
 }
-div.project-bg-image{
-	height:300px;
-	background:black;
+.font22{
+	font-size: 22px !important;
+}
+.bg-overlay {
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("assets/images/projects/womp-full.jpg");
+    /*
+    background-size: cover;
+    background-position: center center;
+    */
+    color: #fff;
+    height: 300px;
+    padding-top: 50px;
 }

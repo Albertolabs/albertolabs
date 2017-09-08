@@ -7,10 +7,13 @@ if( empty($_GET['r']) || ( ! empty($_GET['r']) && ! array_key_exists($_GET['r'],
 
 }else{ 
 	$project = $projectsData[$_GET['r']];
+	//var_dump($project);
 ?>
 
-<div class="project-bg-image">
-&nbsp;
+<div class="bg-overlay" style="background-image: url('assets/images/projects/<?= $project['img_full'] ?>')">
+	<div class="row text-center">
+		<h1><?= $project['title'] ?></h1>
+	</div>
 </div>
 
 <div class="content-wrap">
@@ -18,8 +21,7 @@ if( empty($_GET['r']) || ( ! empty($_GET['r']) && ! array_key_exists($_GET['r'],
 	<div class="container clearfix">
 
 		<div id="section-projects" class="heading-block title-center page-section">
-			<h2><?= $project['title'] ?></h2>
-			<span class="text-justify"><?= $project['description'] ?></span>
+			<span class="text-justify font22"><?= $project['description'] ?></span>
 		</div>
 
 		<div class="pricing bottommargin clearfix">
