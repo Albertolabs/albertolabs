@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
 	<?php }else{ ?>
 	<link rel="stylesheet" href="assets/css/index.min.css" type="text/css" />
