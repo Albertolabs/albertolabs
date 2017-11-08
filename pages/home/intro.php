@@ -14,7 +14,7 @@
 	<div class="clear"></div>
 
 	<div class="btn-down-scroll text-center">
-		<a href="#">
+		<a id="arrow-down-icon" href="#" data-href="#section-services">
 			<i class="icon-angle-down"></i>
 		</a>
 	</div>

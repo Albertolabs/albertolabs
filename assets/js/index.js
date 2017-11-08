@@ -5,6 +5,20 @@ jQuery(window).load(function()
         // contact form
         var contact = new Contact();
             contact.events();
+
+        // arrow down click event
+        var servicesPosition = $("#section-services").offset().top - 200;
+
+        $("a#arrow-down-icon").on("click", function(e)
+        {
+            e.preventDefault();
+
+            $("html, body").animate(
+            {
+                scrollTop: servicesPosition + "px"
+            },
+            700);
+        });
     }
 
     // portafolio image click event
