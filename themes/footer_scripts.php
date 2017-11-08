@@ -8,7 +8,7 @@
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 <script type="text/javascript" src="assets/js/functions.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
-<script type="text/javascript" src="assets/js/contacto.js"></script>
+<script type="text/javascript" src="assets/js/contact.js"></script>
 <?php }else{ ?>
 <script type="text/javascript" src="assets/js/index.min.js"></script>
 <?php } ?>

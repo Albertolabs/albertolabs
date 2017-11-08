@@ -11,7 +11,7 @@ if( empty($_GET['r']) || ( ! empty($_GET['r']) && ! array_key_exists($_GET['r'],
 ?>
 
 <div class="bg-overlay">
-	<div class="bg-image" style="background-image: url('assets/images/projects/<?= $project['img_full'] ?>')"></div>
+	<div class="bg-image" data-image="assets/images/projects/<?= $project['img_full'] ?>" style="background-image: url('assets/images/projects/<?= $project['img_full'] ?>')"></div>
 	<h1><?= $project['title'] ?></h1>
 </div>
 
