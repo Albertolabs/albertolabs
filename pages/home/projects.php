@@ -17,14 +17,13 @@
 				require 'data/projectsData.php';
 
 				$i = 1;
-				foreach($projectsData as $key => $project){
-					$i++;
+				foreach($projectsData as $key => $project){ $i++;
 			?>
 			<article class="portfolio-item pf-media <?= $project['filters'] ?>">
 				<div class="portfolio-image">
 					<img src="assets/images/projects/<?= $project['img_thumb'] ?>" title="<?= $project['title'] ?>" alt="<?= $project['title'] ?>" />
 					<div class="portfolio-overlay">
-						<a href="#" title="Ver más sobre <?= $project['title'] ?>" class="right-icon"><i class="icon-line-plus"></i></a>
+						<a href="<?= $project['route'] ?>" title="Ver más sobre <?= $project['title'] ?>" class="right-icon"><i class="icon-line-plus"></i></a>
 					</div>
 				</div>
 				<div class="portfolio-desc">

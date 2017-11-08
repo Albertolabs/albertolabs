@@ -33,18 +33,17 @@
 					<?php
 						require 'data/projectsData.php';
 						foreach($projectsData as $key => $project){
-							$projectUrl = 'index.php?p=show_project&r=' . $key;
 					?>
 					<article class="portfolio-item pf-media <?= $project['filters'] ?>">
 						<div class="portfolio-image">
 							<img src="assets/images/projects/<?= $project['img_thumb'] ?>" title="<?= $project['title'] ?>" alt="<?= $project['title'] ?>" />
 							<div class="portfolio-overlay">
-								<a href="<?= $projectUrl ?>" title="Ver más sobre <?= $project['title'] ?>" class="right-icon"><i class="icon-line-plus"></i></a>
+								<a href="<?= $project['route'] ?>" title="Ver más sobre <?= $project['title'] ?>" class="right-icon"><i class="icon-line-plus"></i></a>
 							</div>
 						</div>
 						<div class="portfolio-desc">
 							<h3>
-								<a href="<?= $projectUrl ?>" title="Ver más sobre <?= $project['title'] ?>" class="right-icon"><?= $project['title'] ?></a>
+								<a href="<?= $project['route'] ?>" title="Ver más sobre <?= $project['title'] ?>" class="right-icon"><?= $project['title'] ?></a>
 							</h3>
 							<span><?= $project['type'] ?></span>
 						</div>

@@ -114,3 +114,11 @@
 		),
 
 	);
+
+	// Generate project details url
+	$projectUrl = "index.php?p=show_project&r=";
+
+	foreach($projectsData as $key => $value)
+	{
+		$projectsData[$key]["route"] = $projectUrl . $key;
+	}
