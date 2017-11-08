@@ -40,7 +40,7 @@
 			<a href="#"><i class="icon-line-bar-graph"></i></a>
 		</div>
 		<h3>High Scalability</h3>
-		<p>All our projects are designed for having high-scalability.</p>
+		<p>All our projects are designed for high-scalability.</p>
 	</div>
 </div>
 
@@ -49,8 +49,8 @@
 		<div class="fbox-icon" data-animate="fadeIn" data-delay="400">
 			<a href="#"><i class="icon-phone"></i></a>
 		</div>
-		<h3>Responsive Design</h3>
-		<p>Our websites and web applications are full responsive on any device.</p>
+		<h3>Mobile development</h3>
+		<p>Native mobile apps for Android, iOS and Windows Phone.</p>
 	</div>
 </div>
 
