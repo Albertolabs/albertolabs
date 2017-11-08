@@ -2,10 +2,6 @@ jQuery(window).load(function()
 {
     if( $.inArray(currRoute, ["home"]) !== -1 )
     {
-        // go to contact section
-        var contactPosition = $("#section-contact").offset().top - 200;
-        $("html, body").animate({scrollTop:contactPosition + "px"});
-
         // contact form
         var contact = new Contact();
             contact.events();
