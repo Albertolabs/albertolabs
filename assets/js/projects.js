@@ -65,6 +65,22 @@ jQuery(window).load(function()
             $('body,html').stop(true).animate({ scrollTop:services_pos + "px" }, 600);
         });
 
+        // show_project route events
+        if(currRoute == "show_project")
+        {
+            // load bg image 
+            var imageElem   = $("section#content div.bg-overlay div.bg-image");
+            var imageSrc    = imageElem.attr('data-image');
+                imageElem.css("background-image", "url('" + imageSrc + "')");
+
+            // image zoom
+            $(imageElem).on("click", function(e)
+            {
+                e.preventDefault();
+                window.open(imageSrc, "_blank");
+            });
+        }
+
     }
 
 });
