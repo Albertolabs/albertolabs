@@ -10,10 +10,7 @@ if( empty($_GET['r']) || ( ! empty($_GET['r']) && ! array_key_exists($_GET['r'],
 	//var_dump($project);
 ?>
 
-<div class="bg-overlay">
-	<div class="bg-image" data-image="assets/images/projects/<?= $project['img_full'] ?>"></div>
-	<h1><?= $project['title'] ?></h1>
-</div>
+assets/images/projects/<?= $project['img_full'] ?>
 
 <div class="content-wrap">
 
