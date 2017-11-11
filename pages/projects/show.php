@@ -10,28 +10,27 @@ if( empty($_GET['r']) || ( ! empty($_GET['r']) && ! array_key_exists($_GET['r'],
 	//var_dump($project);
 ?>
 
-assets/images/projects/<?= $project['img_full'] ?>
+<div class="container marginTopBot50">
 
-<div class="content-wrap">
+	<div class="col-md-8 col-md-offset-2">
 
-	<div class="container clearfix">
+		<img src="assets/images/projects/<?= $project['img_browser'] ?>" />
+		<div class="clearfix"></div>
+		
+		<hr class="hr_black" />
 
-		<div id="section-projects" class="heading-block title-center page-section">
+		<div class="title-center page-section">
+			<h2><?= $project['title'] ?></h2>
+		</div>
+
+		<hr class="hr_black" />
+
+		<div id="section-projects" class="heading-block noAfter page-section">
 			<span class="text-justify font22"><?= $project['description'] ?></span>
 		</div>
 
-		<div class="pricing bottommargin clearfix">
-
-			<div class="content-wrap" style="padding:0;">
-
-				
-
-			</div>
-
-		</div>
-
 	</div>
-	
+
 </div>
 
 <?php } ?>
