@@ -12,7 +12,7 @@
 			'type' => 'Website',
 			'filters' => 'pf-websites',
 			'route' => '#',
-			'description' => '<p>Lantigua Casa Rural</p>',
+			'description' => '<p>Lantigua Casa Rural is a website built with WordPress where users can get information about the apartment and the nature environment arounds Hinojosa del duque town.</p><p>We have implemented the "Ruralgest" aparment booking system integration with the website, where the users can book rooms using a simple form.</p>',
 			'tech' => array( 'HTML 5', 'CSS 3', 'Javascript', 'jQuery', 'WordPress', 'PHP 7', 'MySQL', 'Apache', 'RuralGest'),
 			'demo' => 'http://www.lantiguacasarural.com/'
 		),
@@ -26,7 +26,7 @@
 			'route' => '#',
 			'description' => file_get_contents( $descriptionsPath . '/sombeo.html'),
 			'tech' => array( 'HTML 5', 'CSS 3', 'Javascript', 'jQuery', 'WordPress', 'PHP 5', 'MySQL', 'Apache' ),
-			'demo' => 'http://www.sombeo.com/'
+			'demo' => null
 		),
 		'perretes' => array(
 			'img_thumb' => 'perretes-thumb.jpg',
@@ -86,7 +86,7 @@
 			'route' => '#',
 			'description' => file_get_contents( $descriptionsPath . '/team-data-repository.html'),
 			'tech' => array( 'HTML 5', 'CSS 3', 'Javascript', 'jQuery', 'Bootstrap 2', 'Responsive Design', 'CodeIgniter 2', 'PHP 5', 'MySQL', 'Nginx' ),
-			'demo' => 'http://www.teamdatarepository.com/demostration'
+			'demo' => null
 		),
 		'team-data-repository-website' => array(
 			'img_thumb' => 'team-data-repository-website-thumb.jpg',
@@ -98,7 +98,7 @@
 			'route' => '#',
 			'description' => file_get_contents( $descriptionsPath . '/team-data-repository-website.html'),
 			'tech' => array( 'HTML 5', 'CSS 3', 'Javascript', 'jQuery', 'Responsive Design', 'CodeIgniter 2', 'PHP 5', 'MySQL', 'Nginx' ),
-			'demo' => 'http://www.teamdatarepository.com'
+			'demo' => null
 		),
 		'blog-reaccionestudio' => array(
 			'img_thumb' => 'blog-reaccionestudio-thumb.jpg',

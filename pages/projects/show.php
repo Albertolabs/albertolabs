@@ -29,6 +29,14 @@ if( empty($_GET['r']) || ( ! empty($_GET['r']) && ! array_key_exists($_GET['r'],
 			<span class="text-justify font22"><?= $project['description'] ?></span>
 		</div>
 
+		<?php if( ! empty($project["demo"]) ) { ?>
+		<p align="center">
+			
+			<a target="_blank" class="button" href="<?= $project["demo"]; ?>" title="<?= $project['title'] ?>"><?= $project["title"]; ?> &raquo;</a>
+			
+		</p>
+		<?php } ?>
+
 	</div>
 
 </div>
