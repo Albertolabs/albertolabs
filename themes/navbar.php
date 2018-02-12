@@ -9,7 +9,7 @@
 			<div id="logo">
 
 				<a title="Home" href="#" class="standard-logo">
-					<img src="http://www.albertolabs.com/images/logolabs.png" />
+					<img src="https://www.albertolabs.com/images/logolabs.png" />
 				</a>
 				
 			</div><!-- #logo end -->
