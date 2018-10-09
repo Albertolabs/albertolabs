@@ -1,5 +1,7 @@
 <?php 
 
+	require '../../vendor/autoload.php';
+
 	$ret = array('STATUS' => 'ERROR');
 
 	if( ! empty($_POST))
@@ -20,6 +22,20 @@
 
 		date_default_timezone_set ("Europe/Madrid");
 		$message .= "<p>Date: " . date("d/m/Y H:i:s") . "</p>";
+
+		// send message to slack
+		try
+		{
+			$slackMssg = str_replace("<p>", "\n", $message);
+			$slackMssg = strip_tags($slackMssg);
+
+			$client = new Maknz\Slack\Client("https://hooks.slack.com/...");
+			$client->send($slackMssg);
+		}
+		catch(Exception $e)
+		{
+
+		}
 
 		// sends email
 		$para = 'viher_3@hotmail.com';
