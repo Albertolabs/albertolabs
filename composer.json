@@ -1,6 +1,5 @@
 {
     "require": {
-        "maknz/slack": "^1.7",
-        "rahimi/monolog-telegram": "^1.0"
+        "maknz/slack": "^1.7"
     }
 }

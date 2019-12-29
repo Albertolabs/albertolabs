@@ -2,9 +2,6 @@
 
 require '../../vendor/autoload.php';
 
-use Monolog\Logger;
-use rahimi\TelegramHandler\TelegramHandler;
-
 $ret = array('STATUS' => 'ERROR');
 
 if( ! empty($_POST))
@@ -34,21 +31,13 @@ if( ! empty($_POST))
 
         $client = new Maknz\Slack\Client("https://hooks.slack.com/services/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");
         $client->send($slackMssg);
+
+        $ret['STATUS'] = "OK";
     }
     catch(Exception $e)
     {
 
     }
-
-    // sends email
-    $log = new Logger('TelegramHandler');
-    $token = '';
-    $channel = null;
-
-    $log->pushHandler(new TelegramHandler($token,$channel,'UTC','F j, Y, g:i a',60));
-    $log->info($message);
-
-    $ret['STATUS'] = "OK";
 }
 
 echo json_encode($ret);
