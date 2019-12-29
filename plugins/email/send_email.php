@@ -2,7 +2,7 @@
 
 require '../../vendor/autoload.php';
 
-$ret = array('STATUS' => 'ERROR');
+$ret = array('STATUS' => 'ERROR', 'MSSG' => 'INIT');
 
 if( ! empty($_POST))
 {
@@ -26,17 +26,24 @@ if( ! empty($_POST))
     // send message to slack
     try
     {
-        $slackMssg = str_replace("<p>", "\n", $message);
-        $slackMssg = strip_tags($slackMssg);
+        $telegram = new Telegram('YOUR TELEGRAM TOKEN HERE');
+        $chat_id = $telegram->ChatID();
 
-        $client = new Maknz\Slack\Client("https://hooks.slack.com/services/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");
-        $client->send($slackMssg);
+        $mssg = str_replace("<p>", "\n", $message);
+        $mssg = strip_tags($mssg);
+
+        $content = array(
+            'chat_id' => $chat_id,
+            'text' => $mssg
+        );
+
+        $telegram->sendMessage($content);
 
         $ret['STATUS'] = "OK";
     }
     catch(Exception $e)
     {
-
+        $ret = array('STATUS' => 'ERROR', 'ERROR' => $e->getMessage());
     }
 }
 
